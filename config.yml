@@ -10,19 +10,19 @@ taxonomies:
 
 menu:
     main:
-        - name: Books
+        - name: News
           url: books/
-          weight: 5 
-        - name: Papers
-          url: papers/
           weight: 2
-        - name: Courses
-          url: courses/
+        - name: Publications
+          url: papers/
           weight: 3
-        - name: Data
+        - name: Education & Professional Experience
+          url: courses/
+          weight: 4
+        - name: Projects
           url: data/
-          weight: 4 
-        - name: Blog
+          weight: 5
+        - name: CV
           url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
           weight: 6
 
@@ -56,7 +56,7 @@ params:
           title: Aditya Mittal
           subtitle: "Hi! I am a fourth-year undergraduate student at UC Davis majoring in Statistics with minors in Mathematics and Computer Science.
                      My research focuses on developing novel algorithms that promote trustworthiness in machine learning and responsible AI systems. I am broadly interested in algorithmic fairness-related issues—particularly in quantifying and mitigating bias in predictive modeling applications."
-          imageUrl: "picture.jpeg"
+          imageUrl: "me.jpg"
           imageWidth: 160
           imageHeight: 160
           buttons:
@@ -76,26 +76,18 @@ params:
               url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
 
     socialIcons:
-        - name: CV
-          url: cv.pdf
         - name: Email
           url: adimittal@ucdavis.edu
-        - name: Zoom
-          url: https://www.zoom.us/my/igelfeld
-        - name: Location
-          url: location/
-        - name: Office Hours
-          url: officehours/
+        - name: Phone
+          url: adimittal@ucdavis.edu
         - name: Google Scholar
-          url: https://scholar.google.com/citations?user=cL23w-4AAAAJ
+          url: https://www.zoom.us/my/igelfeld
         - name: GitHub
-          url: https://github.com/pmichaillat
-        - name: Substack
-          url: https://pmichaillat.substack.com
-        - name: YouTube
-          url: https://www.youtube.com/@alexandermccallsmithoffici9000
+          url: location/
+        - name: LinkedIn
+          url: officehours/
         - name: Twitter
-          url: https://twitter.com/McCallSmith
+          url: https://scholar.google.com/citations?user=cL23w-4AAAAJ
 
     assets:
         disableScrollBarStyle: true
@@ -103,7 +95,7 @@ params:
         hiddenInList: false
         hiddenInSingle: true
     label:
-      text: "Moritz-Maria von Igelfeld"
+      text: "Aditya Mittal's Homepage"
       icon: favicon.ico
       iconHeight: 18
 
