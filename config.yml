@@ -1,5 +1,5 @@
 baseURL: "https://adityamittal03.github.io" 
-title: Aditya Mittal
+title: Aditya Mittal's Homepage
 theme: PaperMod
 
 enableInlineShortcodes: true
@@ -27,10 +27,11 @@ menu:
           weight: 6
 
 params:
-    description: "I am a Professor of Philology at the Institute of Romance Philology in Regensburg, Germany. My research focuses mostly on Portuguese irregular verbs."
-    author: Dakar1
+    description: "Hi! I am a fourth-year undergraduate student at UC Davis majoring in Statistics with minors in Mathematics and Computer Science. 
+                  My research focuses on developing novel algorithms that promote trustworthiness in machine learning and responsible AI systems. I am broadly interested in algorithmic fairness-related issues—particularly in quantifying and mitigating bias in predictive modeling applications."
+    author: Aditya Mittal
     # googleAnalyticsID: "G-XXXXX"
-    DateFormat: "January 2006"
+    DateFormat: "December 2024"
     defaultTheme: light
     hideFooter: false
     disableThemeToggle: true
@@ -52,8 +53,9 @@ params:
     math: true
     profileMode:
           enabled: true
-          title: Dakar2
-          subtitle: "I am a Professor in the Institute of Romance Philology at the University of Regensburg, Germany. My research focuses on Portuguese irregular verbs. I was a doctoral student of Professor Dr Dieter Vogelsang in Munich, and later a second assistant of Professor Walter Schoeffler-Henschell at the University of Wiesbaden."
+          title: Aditya Mittal
+          subtitle: "Hi! I am a fourth-year undergraduate student at UC Davis majoring in Statistics with minors in Mathematics and Computer Science.
+                     My research focuses on developing novel algorithms that promote trustworthiness in machine learning and responsible AI systems. I am broadly interested in algorithmic fairness-related issues—particularly in quantifying and mitigating bias in predictive modeling applications."
           imageUrl: "picture.jpeg"
           imageWidth: 160
           imageHeight: 160
@@ -77,7 +79,7 @@ params:
         - name: CV
           url: cv.pdf
         - name: Email
-          url: mailto:moritz.maria.von.igelfeld@gmail.com
+          url: adimittal@ucdavis.edu
         - name: Zoom
           url: https://www.zoom.us/my/igelfeld
         - name: Location
