@@ -38,22 +38,18 @@ education:
 - name: University of California, Irvine
   logo: /assets/images/badges/uci.png
   position: M.S. in Computer Science
-  date: Sep. 2024 - present
+  date: Sep. 2025 - present
 - name: University of California, Davis
   logo: /assets/images/badges/ucd.png
   position: B.S. in Statistics (Machine Learning Track)
-  date: Sep. 2020 - Jun. 2024
-
-# experience:
-# - name: Peking University
-#   logo: /assets/images/badges/PKU_red.png
-#   position: Research Intern
-#   date: Sep. 2019 - Jul. 2021
+  date: Sep. 2021 - Jun. 2025
 
 awards:
-- name: Award Name 2
+- name: B.S. in Statistics Highest Honors
+  date: 2025
+- name: Outstanding Performance Citation
+  date: 2025
+- name: CRA Undergraduate Researcher (Honorable Mention)
   date: 2024
-- name: Award Name 1 
-  date: 2021
-- name: A quick brown fox jumps over the lazy dog and runs away award
-  date: 2021
+- name: Dean's Honor List
+  date: 2024
