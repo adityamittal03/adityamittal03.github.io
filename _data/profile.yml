@@ -44,18 +44,12 @@ education:
   position: B.S. in Statistics (Machine Learning Track)
   date: Sep. 2021 - Jun. 2025
 
-# experience:
-# - name: Peking University
-#   logo: /assets/images/badges/PKU_red.png
-#   position: Research Intern
-#   date: Sep. 2019 - Jul. 2021
-
 awards:
-- name: CRA Undergraduate Researcher (Honorable Mention)
-  date: 2024
 - name: B.S. in Statistics Highest Honors
   date: 2025
 - name: Outstanding Performance Citation
   date: 2025
+- name: CRA Undergraduate Researcher (Honorable Mention)
+  date: 2024
 - name: Dean's Honor List
   date: 2024
