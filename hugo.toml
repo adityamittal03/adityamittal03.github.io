@@ -2,7 +2,12 @@ baseURL = 'https://www.adityamittal03.github.io'
 languageCode = 'en-us'
 title = 'Aditya Mittal - About Me'
 theme = 'maverick'
-publishDir = '.'
+
+[build]
+  publishDir = 'public'
+
+[build.production]
+  publishDir = '.'
 
 # Google Analytics Configuration
 # googleAnalytics = 'G-HBBB14MJL3'  

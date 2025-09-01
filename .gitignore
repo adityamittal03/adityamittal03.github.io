@@ -3,7 +3,7 @@ public/
 resources/
 .hugo_build.lock
 
-# Generated Hugo files (when building to root)
+# Generated Hugo files (when building to root for production)
 index.html
 index.xml
 sitemap.xml
