@@ -7,8 +7,7 @@ description: "I am a Masters student at UC Irvine, and my research interests are
 
 <img class="avatar" src="/icon_test.jpg" alt="Aditya Mittal">
 
-I am currently a Masters student in Computer Science at **UC Irvine**, and my research interests are in algorithmic 
-fairness in machine learning. I am also open to exploring new research directions!
+I am currently a Masters student in Computer Science at **UC Irvine**, and my research interests are in algorithmic fairness in machine learning. I am also open to exploring new research directions!
 
 I completed my undergraduate degree in Statistics at **UC Davis**, where I was advised by 
 [Norman Matloff](https://faculty.engineering.ucdavis.edu/matloff/) for my senior thesis. My work received an 
@@ -30,8 +29,16 @@ Contact details attached below:
         {{< icon "github" >}}
     </a>
     <a href="https://www.linkedin.com/in/aditya-mittal-ucdavis/" class="social-icon" title="LinkedIn">
-        {{< icon "twitter" >}}
+        {{< icon "linkedin" >}}
     </a>
+    <a href="#" class="social-icon" title="Google Scholar">
+        {{< icon "google scholar" >}}
+    </a>
+</div>
+
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+    <h2>Papers & Talks</h2>
+    <div style="width: 1px; height: 24px; background-color: var(--border-color);"></div>
 </div>
 
 ##  Papers
@@ -100,7 +107,7 @@ Contact details attached below:
 <div class="paper-item">
     <div class="paper-title">
         <button class="paper-toggle" data-paper="talk-2">+</button>
-        <h3 class="paper-title-text">A Mathematical Approach to Algorithmic Fairness <span style="float: right; font-size: 0.8em; color: #666;">December 2024</span></h3>
+        <h3 class="paper-title-text">A Mathematical Approach to Algorithmic Fairness <span style="float: right; font-size: 0.8em; color: var(--accent-color);">December 2024</span></h3>
     </div>
     <div class="paper-content" id="paper-content-talk-2">
         <strong>Conference:</strong> Directed Reading Program - UC Davis Department of Mathematics
@@ -124,7 +131,7 @@ Contact details attached below:
 <div class="paper-item">
     <div class="paper-title">
         <button class="paper-toggle" data-paper="talk-1">+</button>
-        <h3 class="paper-title-text">Discrimination Analysis in a Box: an R Package <span style="float: right; font-size: 0.8em; color: #666;">August 2024</span></h3> 
+        <h3 class="paper-title-text">Discrimination Analysis in a Box: an R Package <span style="float: right; font-size: 0.8em; color: var(--accent-color);">August 2024</span></h3> 
     </div>
     <div class="paper-content" id="paper-content-talk-1">
         <strong>Conference:</strong> Joint Statistical Meetings (JSM) - 2024
@@ -153,7 +160,7 @@ Contact details attached below:
 <div class="paper-item">
     <div class="paper-title">
         <button class="paper-toggle" data-paper="talk-3">+</button>
-        <h3 class="paper-title-text">TowerDebias: Eliminating the Effect of Sensitive Variables from Black-Box Machine Learning Models <span style="float: right; font-size: 0.8em; color: #666;">April 2024</span></h3>
+        <h3 class="paper-title-text">TowerDebias: Eliminating the Effect of Sensitive Variables from Black-Box Machine Learning Models <span style="float: right; font-size: 0.8em; color: var(--accent-color);">April 2024</span></h3>
     </div>
     <div class="paper-content" id="paper-content-talk-3">
         <strong>Conference:</strong> Undergraduate Research, Scholarship, and Creative Activities (URSCA) Conference
@@ -178,7 +185,7 @@ Contact details attached below:
 <div class="paper-item">
     <div class="paper-title">
         <button class="paper-toggle" data-paper="talk-4">+</button>
-        <h3 class="paper-title-text">Discrimination Analysis in a Box: a Machine Learning Package for Teaching <span style="float: right; font-size: 0.8em; color: #666;">December 2023</span></h3>
+        <h3 class="paper-title-text">Discrimination Analysis in a Box: a Machine Learning Package for Teaching <span style="float: right; font-size: 0.8em; color: var(--accent-color);">December 2023</span></h3>
     </div>
     <div class="paper-content" id="paper-content-talk-4">
         <strong>Conference:</strong> UC Davis Scholarship of Teaching and Learning

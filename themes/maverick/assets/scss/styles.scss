@@ -5,7 +5,7 @@
     --text-primary: #000;
     --text-secondary: #666;
     --border-color: #eee;
-    --accent-color: #0066cc;
+    --accent-color: #8B4513;
     --paper-bg: rgba(0, 0, 0, 0.03);
     --paper-hover: rgba(0, 0, 0, 0.05);
 }
@@ -16,7 +16,7 @@
     --text-primary: #ffffff;
     --text-secondary: #b0b0b0;
     --border-color: #404040;
-    --accent-color: #4da6ff;
+    --accent-color: #F5DEB3;
     --paper-bg: rgba(255, 255, 255, 0.05);
     --paper-hover: rgba(255, 255, 255, 0.08);
 }
@@ -90,8 +90,8 @@ strong, b {
     background: none;
     border: 1px solid var(--border-color);
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -390,8 +390,8 @@ img {
 }
 
 .avatar {
-    height: 120px;
-    width: 120px;
+    height: 150px;
+    width: 150px;
     position: relative;
     margin: -10px 0 0 15px;
     float: right;
@@ -512,7 +512,7 @@ th {
     justify-content: center;
     width: 28px;
     height: 28px;
-    color: var(--text-secondary);
+    color: var(--accent-color) !important;
     text-decoration: none;
     transition: color 0.2s ease;
     position: relative;
@@ -579,6 +579,26 @@ footer {
     }
 }
 
+// Navigation buttons
+.nav-button {
+    display: inline-block;
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    
+    &:hover {
+        background-color: var(--accent-color);
+        color: white;
+        transform: translateY(-1px);
+        box-shadow: 0 2px 4px rgba(139, 69, 19, 0.3);
+    }
+}
+
 // Read more links for papers
 .read-more {
     display: inline-block;
@@ -596,6 +616,6 @@ footer {
         background-color: var(--accent-color);
         color: white;
         transform: translateY(-1px);
-        box-shadow: 0 2px 4px rgba(0, 102, 204, 0.2);
+        box-shadow: 0 2px 4px rgba(139, 69, 19, 0.3);
     }
 }

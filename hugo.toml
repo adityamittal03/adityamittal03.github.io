@@ -28,6 +28,18 @@ theme = 'maverick'
     url = "/#talks"
     weight = 2
 
+  [[menu.main]]
+    identifier = "experience"
+    name = "Experience"
+    url = "/experience"
+    weight = 3
+
+  [[menu.main]]
+    identifier = "projects"
+    name = "Projects"
+    url = "/projects"
+    weight = 4
+
 [markup]
   [markup.goldmark.renderer]
     unsafe = true
