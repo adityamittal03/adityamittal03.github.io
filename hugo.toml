@@ -1,0 +1,47 @@
+baseURL = 'https://www.adityamittal03.github.io'
+languageCode = 'en-us'
+title = 'Aditya Mittal - About Me'
+theme = 'maverick'
+
+# Google Analytics Configuration
+# googleAnalytics = 'G-HBBB14MJL3'  
+
+[permalinks]
+  pages = "/:slug"
+
+[params]
+  logo = '/icon_test.jpg'
+  description = "I'm a Masters student at UC Irvine, and my research interests are in fairness in machine learning."
+  author = 'Aditya Mittal'
+  items = 10
+
+[menu]
+  [[menu.main]]
+    identifier = "papers"
+    name = "Papers"
+    url = "/#papers"
+    weight = 1
+  
+  [[menu.main]]
+    identifier = "talks"
+    name = "Talks"
+    url = "/#talks"
+    weight = 2
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ''
+    hl_inline = false
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    noHl = false
+    style = 'monokailight'
+    tabWidth = 4
