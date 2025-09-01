@@ -2,3 +2,22 @@
 public/
 resources/
 .hugo_build.lock
+
+# Generated Hugo files (when building to root)
+index.html
+index.xml
+sitemap.xml
+404.html
+categories/
+tags/
+experience/
+projects/
+assets/
+js/
+*.ico
+*.png
+*.jpg
+*.jpeg
+*.webmanifest
+robots.txt
+Mittal_Aditya_Resume.pdf
