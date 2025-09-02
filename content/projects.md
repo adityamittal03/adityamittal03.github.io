@@ -1,13 +1,14 @@
 ---
 title: "Projects"
-date: 2025-01-27
+date: 2025-09-01
 draft: false
 ---
 
-# Projects
+### Machine Learning
 
-This page will contain your coding projects, research projects, and other work.
+will add some course details...
 
-## Coming Soon
 
-Content will be added here soon.
+### Data Science
+
+will add some dsld and coursework details...

@@ -390,8 +390,8 @@ img {
 }
 
 .avatar {
-    height: 150px;
-    width: 150px;
+    height: 165px;
+    width: 155px;
     position: relative;
     margin: -10px 0 0 15px;
     float: right;
@@ -530,12 +530,15 @@ th {
 // Email tooltip
 .email-tooltip {
     position: absolute;
-    top: 100%;
-    left: 0;
-    margin-top: 8px;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--text-primary);
+    color: var(--bg-primary);
+    padding: 4px 8px;
+    border-radius: 4px;
     font-family: "Source Code Pro", "Monaco", "Menlo", "Consolas", "Courier New", monospace;
-    font-size: 0.85rem;
-    color: var(--text-primary);
+    font-size: 0.75rem;
     white-space: nowrap;
     opacity: 0;
     visibility: hidden;
@@ -544,8 +547,17 @@ th {
     pointer-events: none;
 }
 
-.social-icon:hover .email-tooltip,
-.social-icon.active .email-tooltip {
+.email-tooltip::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 4px solid transparent;
+    border-bottom-color: var(--text-primary);
+}
+
+.social-icon:hover .email-tooltip {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;

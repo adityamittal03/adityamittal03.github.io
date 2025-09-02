@@ -5,7 +5,7 @@ description: "I am a Masters student at UC Irvine, and my research interests are
 
 # Aditya Mittal
 
-<img class="avatar" src="/icon_test.jpg" alt="Aditya Mittal">
+<img class="avatar" src="/a2.png" alt="Aditya Mittal">
 
 I am currently a Masters student in Computer Science at **UC Irvine**, and my research interests are in algorithmic fairness in machine learning. I am also open to exploring new research directions!
 
@@ -20,6 +20,7 @@ Contact details attached below:
 <div class="social-icons">
     <a href="/Mittal_Aditya_Resume.pdf" class="social-icon" title="CV">
         {{< icon "cv" >}}
+        <span class="email-tooltip">CV</span>
     </a>
     <a href="mailto:mittalaal@uci.edu" class="social-icon" title="Email" id="email-icon">
         {{< icon "email" >}}
@@ -27,19 +28,22 @@ Contact details attached below:
     </a>
     <a href="https://github.com/adityamittal03" class="social-icon" title="GitHub">
         {{< icon "github" >}}
+        <span class="email-tooltip">GitHub</span>
     </a>
     <a href="https://www.linkedin.com/in/aditya-mittal-ucdavis/" class="social-icon" title="LinkedIn">
         {{< icon "linkedin" >}}
+        <span class="email-tooltip">LinkedIn</span>
     </a>
     <a href="#" class="social-icon" title="Google Scholar">
         {{< icon "google scholar" >}}
+        <span class="email-tooltip">Google Scholar</span>
     </a>
 </div>
 
-<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+<!-- <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
     <h2>Papers & Talks</h2>
     <div style="width: 1px; height: 24px; background-color: var(--border-color);"></div>
-</div>
+</div> -->
 
 ##  Papers
 <!--     2021-2025     -->
@@ -117,12 +121,12 @@ Contact details attached below:
         <strong>Location:</strong> Davis, California, USA
         <br>
         <strong>Date:</strong> December 2024
-        <br><br>
+        <br>
         <h3> Description </h3>
         Presented mathematical foundations of algorithmic fairness, exploring theoretical approaches to ensure machine learning models make unbiased predictions across different demographic groups.
-        <br><br>
+        <br>
         <h3> Materials </h3>
-        Poster: <a href="#" class="social-icon" title="Poster" target="_blank">
+        Poster: <a href="/machine_learning_fairness_poster.pdf" class="social-icon" title="Poster" target="_blank">
             {{< icon "cv" >}}
         </a>
     </div>
@@ -141,10 +145,10 @@ Contact details attached below:
         <strong>Location:</strong> Portland, Oregon, USA
         <br>
         <strong>Date:</strong> August 2024
-        <br><br>
+        <br>
         <h3> Description </h3>
         Presented our work on the dsld R package for discrimination analysis in educational settings. The talk focused on how the package can be used to teach statistical concepts through real-world examples of fairness and bias analysis.
-        <br><br>
+        <br>
         <h3> Materials </h3>
         Slides: <a href="#" class="social-icon" title="Presentation Slides" target="_blank">
             {{< icon "cv" >}}
@@ -170,10 +174,10 @@ Contact details attached below:
         <strong>Location:</strong> Davis, California, USA
         <br>
         <strong>Date:</strong> April 26-27, 2024
-        <br><br>
+        <br>
         <h3> Description </h3>
         Presented our novel TowerDebias method for removing sensitive variable effects from black-box machine learning models, demonstrating its effectiveness in improving fairness without model retraining.
-        <br><br>
+        <br>
         <h3> Materials </h3>
         Slides: <a href="#" class="social-icon" title="Presentation Slides" target="_blank">
             {{< icon "cv" >}}
@@ -195,12 +199,12 @@ Contact details attached below:
         <strong>Location:</strong> Davis, California, USA
         <br>
         <strong>Date:</strong> December 1, 2023
-        <br><br>
+        <br>
         <h3> Description </h3>
         Presented our dsld package for discrimination analysis in educational settings, showcasing how it can be used to teach statistical concepts through real-world fairness examples.
-        <br><br>
+        <br>
         <h3> Materials </h3>
-        Poster: <a href="#" class="social-icon" title="Poster" target="_blank">
+        Poster: <a href="/DSLD_Research_Poster.pdf" class="social-icon" title="Poster" target="_blank">
             {{< icon "cv" >}}
         </a>
     </div>

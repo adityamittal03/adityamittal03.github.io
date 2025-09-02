@@ -4,7 +4,7 @@
   "home_page_url": "{{ .Site.BaseURL }}",
   "feed_url": "{{ .Site.BaseURL }}feed.json",
   "description": "{{ .Site.Params.description }}",
-  "favicon": "{{ .Site.BaseURL }}/favicon.ico",
+  "favicon": "{{ .Site.BaseURL }}/icon_test.ico",
   "expired": false,
   "author": {
     "name": "{{ .Site.Params.author }}",

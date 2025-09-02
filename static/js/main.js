@@ -1,44 +1,5 @@
-// Email tooltip functionality
-document.addEventListener('DOMContentLoaded', function() {
-    const emailIcon = document.getElementById('email-icon');
-    if (emailIcon) {
-        let tooltipVisible = false;
-        let hideTimer = null;
-
-        function hideTooltip() {
-            emailIcon.classList.remove('active');
-            tooltipVisible = false;
-            if (hideTimer) {
-                clearTimeout(hideTimer);
-                hideTimer = null;
-            }
-        }
-
-        function startHideTimer() {
-            if (hideTimer) {
-                clearTimeout(hideTimer);
-            }
-            hideTimer = setTimeout(hideTooltip, 10000); // 10 seconds
-        }
-
-        emailIcon.addEventListener('mouseenter', function() {
-            this.classList.add('active');
-            tooltipVisible = true;
-            startHideTimer();
-        });
-
-        emailIcon.addEventListener('mouseleave', function() {
-            startHideTimer();
-        });
-
-        // Hide tooltip on scroll
-        window.addEventListener('scroll', function() {
-            if (tooltipVisible) {
-                hideTooltip();
-            }
-        });
-    }
-});
+// Email tooltip functionality - now handled by pure CSS hover
+// Removed special JavaScript behavior to make all tooltips consistent
 
 // Paper expand/collapse functionality
 document.addEventListener('DOMContentLoaded', function() {
