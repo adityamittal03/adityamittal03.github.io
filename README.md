@@ -5,7 +5,7 @@ Personal website built with Hugo and the Maverick theme.
 ## About
 
 This website shows my research, publications & talks, and professional experience. I am currently Masters student at UC Irvine with research interests in fairness in machine learning.
-
+ 
 ## Run locally
 
 Run this in local terminal: 
