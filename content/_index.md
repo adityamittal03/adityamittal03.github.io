@@ -95,7 +95,7 @@ Contact details attached below:
             {{< icon "github" >}}
         </a>
         <br>
-        Quarto Book: <a href="#" class="social-icon" title="Quarto Book" target="https://htmlpreview.github.io/?https://github.com/matloff/dsldBook/blob/main/_book/index.html">
+        Quarto Book: <a href="https://htmlpreview.github.io/?https://github.com/matloff/dsldBook/blob/main/_book/index.html" class="social-icon" title="Quarto Book" target="_blank">
             {{< icon "cv" >}}
         </a>
     </div>
