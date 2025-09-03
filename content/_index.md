@@ -34,7 +34,7 @@ Contact details attached below:
         {{< icon "linkedin" >}}
         <span class="email-tooltip">LinkedIn</span>
     </a>
-    <a href="#" class="social-icon" title="Google Scholar">
+    <a href="https://scholar.google.com/citations?hl=en&user=uCLks14AAAAJ" class="social-icon" title="Google Scholar">
         {{< icon "google scholar" >}}
         <span class="email-tooltip">Google Scholar</span>
     </a>
