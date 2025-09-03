@@ -85,12 +85,10 @@ Contact details attached below:
         <br><br>
         <strong>A. Mittal</strong>, T. Abdullah, A. Ashok, B. Zarate Estrada, S. Martha, B. Ouattara, J. Tran, and N. Matloff (2025) "dsld: A Socially Relevant Tool for Teaching Statistics." <a href="https://doi.org/10.48550/arXiv.2411.04228">arXiv:2411.04228</a>
         <br> 
-        <em>Status: To be submitted.</em>
+        <em>Status: Under Review.</em>
         <!--  -->
         <h3> Abstract </h3>
-        The growing influence of data science in decision-making requires rigorous quantitative methods to understand and address social discrimination. We introduce "Data Science Looks At Discrimination" (dsld), an R package that provides a comprehensive set of statistical and graphical tools for analyzing potential discrimination involving sensitive attributes such as race, gender, and age. The package addresses several key fairness challenges, including confounder analysis and bias reduction against protected groups in predictive models. Python interfaces are also available.
-        <br><br>
-        In educational settings, dsld offers instructors powerful methods to teach key statistical concepts through motivating practical examples of discrimination analysis. The inclusion of an 80-page Quarto book further supports users, ranging from statistics educators to legal professionals, in effectively applying these methods on real-world applications. We show the implementation details of the package functions and illustrate their use with several examples.
+        The growing influence of data science in statistics education requires tools that make key concepts accessible through real-world applications. We introduce ``Data Science Looks At Discrimination'' (\texttt{dsld}), an R package that provides a comprehensive set of analytical and graphical methods for examining issues of discrimination involving attributes such as race, gender, and age. By positioning fairness analysis as a teaching tool, the package enables instructors to demonstrate confounder effects, model bias, and related topics through applied examples. An accompanying 80-page Quarto book guides students and legal professionals in understanding these principles and applying them to real data. We describe the implementation of the package functions and illustrate their use with examples. Python interfaces are also available.
         <!--  -->
         <h3> Code </h3>
         Github Repository: <a href="https://github.com/matloff/dsld" class="social-icon" title="GitHub Repository" target="_blank">
