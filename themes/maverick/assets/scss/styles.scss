@@ -631,3 +631,189 @@ footer {
         box-shadow: 0 2px 4px rgba(139, 69, 19, 0.3);
     }
 }
+
+// Project cards (large clickable buttons)
+.project-scroll {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x proximity;
+    padding-bottom: .5rem;
+    margin-top: 0.5rem;
+    /* Firefox scrollbar color */
+    scrollbar-color: var(--accent-color) transparent;
+}
+
+.project-scroll::-webkit-scrollbar {
+    height: 8px;
+}
+
+.project-scroll::-webkit-scrollbar-thumb {
+    background: var(--accent-color);
+    border-radius: 4px;
+}
+
+/* Global scrollbar styling (WebKit) */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    border: 2px solid transparent; /* creates a little inset */
+    background-clip: padding-box;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Global scrollbar styling (Firefox) */
+html {
+    scrollbar-color: var(--accent-color) transparent;
+    scrollbar-width: thin;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.project-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    text-decoration: none;
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease, background-color 0.15s ease;
+    position: relative;
+    min-height: 144px; /* ~90% of 160px */
+}
+
+.project-scroll .project-card {
+    flex: 0 0 324px; /* ~90% width of previous 360px */
+    scroll-snap-align: start;
+}
+
+.project-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent-color);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.project-card-media {
+    flex: 0 0 140px;
+    height: 140px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: var(--paper-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-card-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-card-title {
+    margin: 0 0 0.25rem 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.project-card-desc {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+@media (max-width: 560px) {
+    .project-card {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .project-card-media {
+        flex-basis: auto;
+        width: 100%;
+        height: 162px; /* ~90% of 180px */
+    }
+}
+
+/* Variant: image on top (kept) */
+.project-card--imageTop {
+    flex-direction: column;
+    align-items: stretch;
+}
+.project-card--imageTop .project-card-media {
+    flex-basis: auto;
+    width: 100%;
+    height: 162px; /* ~90% of 180px */
+    border-radius: 10px;
+}
+
+/* Pinned badge */
+.pin-badge {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    z-index: 2;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    padding: 2px 6px;
+    border-radius: 999px;
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    background: var(--paper-bg);
+}
+
+/* Responsive embed for interactive HTML plots */
+.embed-frame {
+    width: 100%;
+    height: 520px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--bg-secondary);
+}
+
+@media (max-width: 640px) {
+    .embed-frame { height: 420px; }
+}
+
+/* Inline figure row (two-up) */
+.figure-row { display: flex; gap: 1rem; align-items: flex-start; flex-wrap: wrap; margin-top: 0.5rem; }
+.figure-row figure { flex: 1 1 320px; min-width: 280px; margin: 0; }
+.figure-row figcaption { color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.25rem; text-align: center; }
+
+/* Linear model action bar buttons */
+.lm-bar { display: flex; gap: 0.5rem; flex-wrap: wrap; margin: 0 0 0.5rem 0; }
+.lm-bar-button {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  transition: color 0.15s ease, border-color 0.15s ease, background-color 0.15s ease;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.lm-bar-button:hover, .lm-bar-button.active { border-color: var(--accent-color); color: var(--accent-color); }
+.lm-section { margin-top: 0.5rem; }

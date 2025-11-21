@@ -1,13 +1,10 @@
-baseURL = 'https://www.adityamittal03.github.io'
+baseURL = 'https://adityamittal03.github.io'
 languageCode = 'en-us'
 title = 'Aditya Mittal - About Me'
 theme = 'maverick'
 
 [build]
   publishDir = 'public'
-
-[build.production]
-  publishDir = '.'
 
 # Google Analytics Configuration
 # googleAnalytics = 'G-HBBB14MJL3'  
@@ -16,7 +13,7 @@ theme = 'maverick'
   pages = "/:slug"
 
 [params]
-  logo = '/icon_test.jpg'
+  logo = '/icon_test.png'
   description = "I'm a Masters student at UC Irvine, and my research interests are in fairness in machine learning."
   author = 'Aditya Mittal'
   items = 10

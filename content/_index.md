@@ -24,7 +24,7 @@ Contact details attached below:
     </a>
     <a href="mailto:mittalaal@uci.edu" class="social-icon" title="Email" id="email-icon">
         {{< icon "email" >}}
-        <span class="email-tooltip">mittalaa@uci.edu</span>
+        <span class="email-tooltip">mittalaal@uci.edu</span>
     </a>
     <a href="https://github.com/adityamittal03" class="social-icon" title="GitHub">
         {{< icon "github" >}}
@@ -207,4 +207,3 @@ Contact details attached below:
         </a>
     </div>
 </div>
-
