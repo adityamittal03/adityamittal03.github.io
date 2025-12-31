@@ -25,4 +25,4 @@ This project uses the [Maverick theme](https://github.com/canhtran/maverick), wh
 
 ## Updates
 
-Last updated: September 1st, 2025.
+Last updated: December 31st, 2025.

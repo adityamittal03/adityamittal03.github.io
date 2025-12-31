@@ -1,24 +1,24 @@
 ---
 title: "CV"
-date: 2025-09-01
+date: 2025-12-31
 draft: false
 ---
 
-Here is the <a href="/Mittal_Aditya_Resume.pdf" target="_blank">PDF version</a> of my resume.
+Here is the <a href="/Aditya_Mittal___Resume.pdf" target="_blank">PDF version</a> of my resume.
 
 ### Education
 
 <div class="paper-item">
     <div class="paper-title">
         <button class="paper-toggle" data-paper="edu-1">+</button>
-        <h3 class="paper-title-text">MS in Computer Science - UC Irvine <span style="float: right; font-size: 0.8em; color: var(--accent-color);">Sept 2025 - June 2027</span></h3>
+        <h3 class="paper-title-text">MS in Computer Science - UC Irvine <span style="float: right; font-size: 0.8em; color: var(--accent-color);">Sep 2025 - Jun 2027</span></h3>
     </div>
     <div class="paper-content" id="paper-content-edu-1">
         <strong>Program:</strong> Master of Science in Computer Science
         <br>
         <strong>Institution:</strong> University of California, Irvine
         <br>
-        <strong>Duration:</strong> September 2025 - June 2027
+        <strong>Duration:</strong> Sep 2025 - Jun 2027
         <br>
         <strong>Graduate GPA:</strong> TBD
         <br>
@@ -33,14 +33,14 @@ Here is the <a href="/Mittal_Aditya_Resume.pdf" target="_blank">PDF version</a> 
 <div class="paper-item">
     <div class="paper-title">
         <button class="paper-toggle" data-paper="edu-2">+</button>
-        <h3 class="paper-title-text">BS in Statistics - UC Davis <span style="float: right; font-size: 0.8em; color: var(--accent-color);">Sept 2021 - June 2025</span></h3>
+        <h3 class="paper-title-text">BS in Statistics - UC Davis <span style="float: right; font-size: 0.8em; color: var(--accent-color);">Sep 2021 - Jun 2025</span></h3>
     </div>
     <div class="paper-content" id="paper-content-edu-2">
         <strong>Program:</strong> Bachelor of Science in Statistics
         <br>
         <strong>Institution:</strong> University of California, Davis
         <br>
-        <strong>Duration:</strong> September 2021 - June 2025
+        <strong>Duration:</strong> Sep 2021 - Jun 2025
         <br>
         <strong>Undergraduate GPA:</strong> 3.90/4.00
         <br>
@@ -73,7 +73,7 @@ Here is the <a href="/Mittal_Aditya_Resume.pdf" target="_blank">PDF version</a> 
         <br>
         <strong>Institution:</strong> Foothill College, United States
         <br>
-        <strong>Duration:</strong> August 2019 - April 2021
+        <strong>Duration:</strong> Aug 2019 - Apr 2021
         <br>
         <h3>Relevant Coursework</h3>
         Object-oriented Programming in Java (A-), Object-oriented Programming in Python (A+)
@@ -85,7 +85,7 @@ Here is the <a href="/Mittal_Aditya_Resume.pdf" target="_blank">PDF version</a> 
 <div class="paper-item">
     <div class="paper-title">
         <button class="paper-toggle" data-paper="exp-1">+</button>
-        <h3 class="paper-title-text">Undergraduate Research Assistant - UC Davis <span style="float: right; font-size: 0.8em; color: var(--accent-color);">June 2023 – June 2025</span></h3>
+        <h3 class="paper-title-text">Undergraduate Research Assistant - UC Davis <span style="float: right; font-size: 0.8em; color: var(--accent-color);">Jun 2023 – Jun 2025</span></h3>
     </div>
     <div class="paper-content" id="paper-content-exp-1">
         <strong>Position:</strong> Undergraduate Research Assistant
@@ -96,7 +96,7 @@ Here is the <a href="/Mittal_Aditya_Resume.pdf" target="_blank">PDF version</a> 
         <br>
         <strong>Location:</strong> Davis, CA
         <br>
-        <strong>Duration:</strong> June 2023 – June 2025
+        <strong>Duration:</strong> Jun 2023 – Jun 2025
         <br>
         <h3>Key Responsibilities</h3>
         • Designed and implemented TowerDebias, a new post-processing algorithm to reduce bias in black-box ML classifiers; evaluated fairness–accuracy trade-offs across multiple tabular datasets.
@@ -110,7 +110,7 @@ Here is the <a href="/Mittal_Aditya_Resume.pdf" target="_blank">PDF version</a> 
 <div class="paper-item">
     <div class="paper-title">
         <button class="paper-toggle" data-paper="exp-2">+</button>
-        <h3 class="paper-title-text">Undergraduate Research Assistant - UC Davis <span style="float: right; font-size: 0.8em; color: var(--accent-color);">June 2024 – Sept. 2024</span></h3>
+        <h3 class="paper-title-text">Undergraduate Research Assistant - UC Davis <span style="float: right; font-size: 0.8em; color: var(--accent-color);">Jun 2024 – Sep 2024</span></h3>
     </div>
     <div class="paper-content" id="paper-content-exp-2">
         <strong>Position:</strong> Undergraduate Research Assistant
@@ -121,7 +121,7 @@ Here is the <a href="/Mittal_Aditya_Resume.pdf" target="_blank">PDF version</a> 
         <br>
         <strong>Location:</strong> Davis, CA
         <br>
-        <strong>Duration:</strong> June 2024 – September 2024
+        <strong>Duration:</strong> Jun 2024 – Sep 2024
         <br>
         <h3>Key Responsibilities</h3>
         • Built an end-to-end pipeline combining LLM-based relation extraction with GNN link prediction to generate knowledge graphs from hardware-security datasets (weaknesses, vulnerabilities, attack patterns).
@@ -131,7 +131,7 @@ Here is the <a href="/Mittal_Aditya_Resume.pdf" target="_blank">PDF version</a> 
 <div class="paper-item">
     <div class="paper-title">
         <button class="paper-toggle" data-paper="exp-5">+</button>
-        <h3 class="paper-title-text">Undergraduate Statistics Grader - UC Davis <span style="float: right; font-size: 0.8em; color: var(--accent-color);">Jan 2023 – June 2023</span></h3>
+        <h3 class="paper-title-text">Undergraduate Statistics Grader - UC Davis <span style="float: right; font-size: 0.8em; color: var(--accent-color);">Jan 2023 – Jun 2023</span></h3>
     </div>
     <div class="paper-content" id="paper-content-exp-5">
         <strong>Position:</strong> Undergraduate Reader
@@ -142,7 +142,7 @@ Here is the <a href="/Mittal_Aditya_Resume.pdf" target="_blank">PDF version</a> 
         <br>
         <strong>Location:</strong> Davis, CA
         <br>
-        <strong>Duration:</strong> January 2023 – June 2023
+        <strong>Duration:</strong> Jan 2023 – Jun 2023
         <br>
         <h3>Key Responsibilities</h3>
         <strong>Grading and Assistance:</strong> Graded homework, exams, and projects, providing feedback to enhance course content and improve student learning outcomes.
@@ -164,7 +164,7 @@ Here is the <a href="/Mittal_Aditya_Resume.pdf" target="_blank">PDF version</a> 
         <br>
         <strong>Location:</strong> Davis, California, United States
         <br>
-        <strong>Duration:</strong> June 2023 - December 2023
+        <strong>Duration:</strong> Jun 2023 - Dec 2023
         <br>
         <h3>Key Responsibilities</h3>
         • Developed a package in R (with Python interfaces) called "DSLD: Data Science Looks at Discrimination."
@@ -178,7 +178,7 @@ Here is the <a href="/Mittal_Aditya_Resume.pdf" target="_blank">PDF version</a> 
 <div class="paper-item">
     <div class="paper-title">
         <button class="paper-toggle" data-paper="exp-3">+</button>
-        <h3 class="paper-title-text">Business Analyst Intern - Cisco (Data, Insights, & Analytics Team) <span style="float: right; font-size: 0.8em; color: var(--accent-color);">June 2023 – Sept. 2023</span></h3>
+        <h3 class="paper-title-text">Business Analyst Intern - Cisco (Data, Insights, & Analytics Team) <span style="float: right; font-size: 0.8em; color: var(--accent-color);">Jun 2023 – Sep 2023</span></h3>
     </div>
     <div class="paper-content" id="paper-content-exp-3">
         <strong>Position:</strong> Business Analyst Intern
@@ -189,7 +189,7 @@ Here is the <a href="/Mittal_Aditya_Resume.pdf" target="_blank">PDF version</a> 
         <br>
         <strong>Location:</strong> San Jose, CA
         <br>
-        <strong>Duration:</strong> June 2023 – September 2023
+        <strong>Duration:</strong> Jun 2023 – Sep 2023
         <br>
         <h3>Key Responsibilities</h3>
         • Designed interactive, scalable Power BI dashboards used in Quarterly Business Reviews to track supply-chain performance and key KPIs.
@@ -201,7 +201,7 @@ Here is the <a href="/Mittal_Aditya_Resume.pdf" target="_blank">PDF version</a> 
 <div class="paper-item">
     <div class="paper-title">
         <button class="paper-toggle" data-paper="exp-4">+</button>
-        <h3 class="paper-title-text">Business Analyst Intern - Cisco (Global Trade Compliance Team) <span style="float: right; font-size: 0.8em; color: var(--accent-color);">June 2022 – Sept. 2022</span></h3>
+        <h3 class="paper-title-text">Business Analyst Intern - Cisco (Global Trade Compliance Team) <span style="float: right; font-size: 0.8em; color: var(--accent-color);">Jun 2022 – Sep 2022</span></h3>
     </div>
     <div class="paper-content" id="paper-content-exp-4">
         <strong>Position:</strong> Business Analyst Intern
@@ -212,7 +212,7 @@ Here is the <a href="/Mittal_Aditya_Resume.pdf" target="_blank">PDF version</a> 
         <br>
         <strong>Location:</strong> San Jose, CA
         <br>
-        <strong>Duration:</strong> June 2022 – September 2022
+        <strong>Duration:</strong> Jun 2022 – Sep 2022
         <br>
         <h3>Key Responsibilities</h3>
         • Engineered a centralized support system in Smartsheet, reducing licensing costs by $25,000 annually.

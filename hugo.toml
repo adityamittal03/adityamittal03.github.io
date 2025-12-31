@@ -37,12 +37,6 @@ theme = 'maverick'
     url = "/experience"
     weight = 3
 
-  [[menu.main]]
-    identifier = "projects"
-    name = "Projects"
-    url = "/projects"
-    weight = 4
-
 [markup]
   [markup.goldmark.renderer]
     unsafe = true

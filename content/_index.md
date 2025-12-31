@@ -1,30 +1,28 @@
 ---
 title: "Home"
-description: "I am a Masters student at UC Irvine, and my research interests are in machine learning fairness."
+description: "Master's student at UC Irvine focused on algorithmic fairness in machine learning."
 ---
 
 # Aditya Mittal
 
 <img class="avatar" src="/a2.png" alt="Aditya Mittal">
 
-I am currently a Masters student in Computer Science at **UC Irvine**, and my research interests are in algorithmic fairness in machine learning. I am also open to exploring new research directions!
+I am a Master's student in Computer Science at **UC Irvine**, working with [Unnat Jain](https://unnat.github.io) on efficient vision-language-action models.
 
-I completed my undergraduate degree in Statistics at **UC Davis**, where I was advised by 
-[Norman Matloff](https://faculty.engineering.ucdavis.edu/matloff/) for my senior thesis. My work received an 
-Honorable Mention for the *CRA Outstanding Undergraduate Researcher* award (2025).
+I earned my BS in Statistics with highest honors at **UC Davis** and completed my undergraduate thesis with [Norman Matloff](https://faculty.engineering.ucdavis.edu/matloff/). This work received an Honorable Mention for the *CRA Outstanding Undergraduate Researcher* award (2025).
 
-Contact details attached below:
+Contact details below:
 
 <!--  -->
 <!-- Social icons -->
 <div class="social-icons">
-    <a href="/Mittal_Aditya_Resume.pdf" class="social-icon" title="CV">
+    <a href="/Aditya_Mittal___Resume.pdf" class="social-icon" title="CV">
         {{< icon "cv" >}}
         <span class="email-tooltip">CV</span>
     </a>
-    <a href="mailto:mittalaal@uci.edu" class="social-icon" title="Email" id="email-icon">
+    <a href="mailto:mittalaa@uci.edu" class="social-icon" title="Email" id="email-icon">
         {{< icon "email" >}}
-        <span class="email-tooltip">mittalaal@uci.edu</span>
+        <span class="email-tooltip">mittalaa@uci.edu</span>
     </a>
     <a href="https://github.com/adityamittal03" class="social-icon" title="GitHub">
         {{< icon "github" >}}
@@ -88,7 +86,7 @@ Contact details attached below:
         <em>Status: Under Review.</em>
         <!--  -->
         <h3> Abstract </h3>
-        The growing influence of data science in statistics education requires tools that make key concepts accessible through real-world applications. We introduce ``Data Science Looks At Discrimination'' (\texttt{dsld}), an R package that provides a comprehensive set of analytical and graphical methods for examining issues of discrimination involving attributes such as race, gender, and age. By positioning fairness analysis as a teaching tool, the package enables instructors to demonstrate confounder effects, model bias, and related topics through applied examples. An accompanying 80-page Quarto book guides students and legal professionals in understanding these principles and applying them to real data. We describe the implementation of the package functions and illustrate their use with examples. Python interfaces are also available.
+        The growing influence of data science in statistics education requires tools that make key concepts accessible through real-world applications. We introduce "Data Science Looks At Discrimination" (dsld), an R package that provides a comprehensive set of analytical and graphical methods for examining issues of discrimination involving attributes such as race, gender, and age. By positioning fairness analysis as a teaching tool, the package enables instructors to demonstrate confounder effects, model bias, and related topics through applied examples. An accompanying 80-page Quarto book guides students and legal professionals in understanding these principles and applying them to real data. We describe the implementation of the package functions and illustrate their use with examples. Python interfaces are also available.
         <!--  -->
         <h3> Code </h3>
         Github Repository: <a href="https://github.com/matloff/dsld" class="social-icon" title="GitHub Repository" target="_blank">
@@ -121,7 +119,7 @@ Contact details attached below:
         <strong>Date:</strong> December 2024
         <br>
         <h3> Description </h3>
-        Presented mathematical foundations of algorithmic fairness, exploring theoretical approaches to ensure machine learning models make unbiased predictions across different demographic groups.
+        Presented mathematical foundations of algorithmic fairness and methods to reduce bias in model predictions across demographic groups.
         <br>
         <h3> Materials </h3>
         Poster: <a href="/machine_learning_fairness_poster.pdf" class="social-icon" title="Poster" target="_blank">
@@ -145,15 +143,15 @@ Contact details attached below:
         <strong>Date:</strong> August 2024
         <br>
         <h3> Description </h3>
-        Presented our work on the dsld R package for discrimination analysis in educational settings. The talk focused on how the package can be used to teach statistical concepts through real-world examples of fairness and bias analysis.
+        Presented the dsld R package for discrimination analysis in education, emphasizing how it teaches statistical concepts through real-world fairness and bias examples.
         <br>
         <h3> Materials </h3>
-        Slides: <a href="#" class="social-icon" title="Presentation Slides" target="_blank">
+        Slides: <a href="/dsld_slides.pdf" class="social-icon" title="Presentation Slides" target="_blank">
             {{< icon "cv" >}}
-        </a>
+        <!-- </a>
         <br>
         Abstract: <a href="#" class="social-icon" title="Conference Abstract" target="_blank">
-            {{< icon "cv" >}}
+            {{< icon "cv" >}} -->
         </a>
     </div>
 </div> 
@@ -174,10 +172,10 @@ Contact details attached below:
         <strong>Date:</strong> April 26-27, 2024
         <br>
         <h3> Description </h3>
-        Presented our novel TowerDebias method for removing sensitive variable effects from black-box machine learning models, demonstrating its effectiveness in improving fairness without model retraining.
+        Presented TowerDebias, a post-processing method that removes sensitive-variable effects from black-box models and improves fairness without retraining.
         <br>
         <h3> Materials </h3>
-        Slides: <a href="#" class="social-icon" title="Presentation Slides" target="_blank">
+        Slides: <a href="/tdb_slides.pdf" class="social-icon" title="Presentation Slides" target="_blank">
             {{< icon "cv" >}}
         </a>
     </div>
@@ -199,7 +197,7 @@ Contact details attached below:
         <strong>Date:</strong> December 1, 2023
         <br>
         <h3> Description </h3>
-        Presented our dsld package for discrimination analysis in educational settings, showcasing how it can be used to teach statistical concepts through real-world fairness examples.
+        Presented the dsld package for discrimination analysis in education, showing how it supports teaching statistical concepts through real-world fairness examples.
         <br>
         <h3> Materials </h3>
         Poster: <a href="/DSLD_Research_Poster.pdf" class="social-icon" title="Poster" target="_blank">
