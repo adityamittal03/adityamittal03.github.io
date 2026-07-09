@@ -21,7 +21,7 @@ images:
       <figcaption>CRAFT integration with the I2RT Yam setup for tabletop bimanual manipulation.</figcaption>
     </figure>
     <figure class="craft-hero-video">
-      <video controls preload="metadata" playsinline muted src="/blog/craft-hand/videos/vision-teleop-basket-test.mp4?v=20260709b"></video>
+      <video controls preload="metadata" playsinline muted src="/blog/craft-hand/videos/orange-pick-and-place.mp4?v=20260709c"></video>
       <figcaption>Quest-based teleoperation for an orange pick-and-place task.</figcaption>
     </figure>
   </div>
