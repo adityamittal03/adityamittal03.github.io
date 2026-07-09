@@ -115,7 +115,9 @@
             }
         });
     </script>
-    <script src="{{ "js/main.js" | relURL }}"></script>
+    {{ $mainJSVersion := now.Unix }}
+    {{ with os.Stat "static/js/main.js" }}{{ $mainJSVersion = .ModTime.Unix }}{{ end }}
+    <script src="{{ "js/main.js" | relURL }}?v={{ $mainJSVersion }}"></script>
     
     <!-- Dark mode functionality -->
     <script>

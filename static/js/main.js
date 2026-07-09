@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Blog video task switchers.
-document.addEventListener('DOMContentLoaded', function() {
+function initCraftVideoSwitchers() {
     const switchers = document.querySelectorAll('[data-craft-video-switcher]');
     if (!switchers.length) return;
 
@@ -134,7 +134,13 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     });
-});
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initCraftVideoSwitchers);
+} else {
+    initCraftVideoSwitchers();
+}
 
 // Autoplay muted videos as they enter the viewport, and pause them when they leave.
 document.addEventListener('DOMContentLoaded', function() {
