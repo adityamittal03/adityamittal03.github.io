@@ -96,6 +96,46 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// Blog video task switchers.
+document.addEventListener('DOMContentLoaded', function() {
+    const switchers = document.querySelectorAll('[data-craft-video-switcher]');
+    if (!switchers.length) return;
+
+    switchers.forEach(function(switcher) {
+        const tabs = Array.from(switcher.querySelectorAll('.craft-video-switcher__tab'));
+        const panels = Array.from(switcher.querySelectorAll('.craft-video-switcher__panel'));
+
+        function activateTab(activeTab) {
+            const activePanelId = activeTab.getAttribute('aria-controls');
+
+            tabs.forEach(function(tab) {
+                const isActive = tab === activeTab;
+                tab.classList.toggle('is-active', isActive);
+                tab.setAttribute('aria-selected', String(isActive));
+            });
+
+            panels.forEach(function(panel) {
+                const isActive = panel.id === activePanelId;
+                panel.classList.toggle('is-active', isActive);
+                panel.hidden = !isActive;
+
+                if (!isActive) {
+                    const video = panel.querySelector('video');
+                    if (video && !video.paused) {
+                        video.pause();
+                    }
+                }
+            });
+        }
+
+        tabs.forEach(function(tab) {
+            tab.addEventListener('click', function() {
+                activateTab(tab);
+            });
+        });
+    });
+});
+
 // Autoplay muted videos as they enter the viewport, and pause them when they leave.
 document.addEventListener('DOMContentLoaded', function() {
     const videos = Array.from(document.querySelectorAll('video'));
