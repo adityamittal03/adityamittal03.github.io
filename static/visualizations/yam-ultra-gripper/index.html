@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>I2RT YAM Ultra Gripper Viewer</title>
+    <link rel="stylesheet" href="./viewer.css">
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.164.1/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.164.1/examples/jsm/"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <main class="viewer-shell">
+      <canvas id="robot-canvas" aria-label="Interactive 3D YAM Ultra arm visualization"></canvas>
+
+      <section class="topbar" aria-label="Visualization controls">
+        <div class="title-block">
+          <p>I2RT YAM Ultra</p>
+          <h1>Arm + Linear Gripper</h1>
+        </div>
+        <div class="phase-tabs" role="tablist" aria-label="Animation phase">
+          <button type="button" class="phase-tab is-active" data-phase="assembled">Assembled</button>
+          <button type="button" class="phase-tab" data-phase="exploded">Exploded</button>
+        </div>
+        <div class="icon-actions" aria-label="Animation actions">
+          <button type="button" class="icon-button" id="play-toggle" aria-label="Pause animation" title="Pause animation">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M8 5h3v14H8zM13 5h3v14h-3z"></path>
+            </svg>
+          </button>
+          <button type="button" class="icon-button" id="reset-view" aria-label="Reset view" title="Reset view">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 12a8 8 0 0 1 13.7-5.7l1.8 1.8V3h-5.1l1.9 1.9A6 6 0 1 0 18 12h2A8 8 0 1 1 4 12z"></path>
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <section class="readout" aria-label="Model readout">
+        <div>
+          <span class="readout-label">Assembly</span>
+          <strong>YAM Ultra</strong>
+        </div>
+        <div>
+          <span class="readout-label">End Effector</span>
+          <strong>linear gripper</strong>
+        </div>
+        <div>
+          <span class="readout-label">Meshes</span>
+          <strong>9 STL parts</strong>
+        </div>
+      </section>
+
+      <div class="labels" id="labels" aria-hidden="true"></div>
+
+      <section class="loader" id="loader" aria-live="polite">
+        <div class="loader-inner">
+          <span class="spinner"></span>
+          <strong>Loading YAM Ultra</strong>
+          <p id="loader-detail">Preparing meshes</p>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./viewer.js"></script>
+  </body>
+</html>

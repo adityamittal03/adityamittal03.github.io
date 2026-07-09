@@ -1,17 +1,17 @@
 {
   "version": "https://jsonfeed.org/version/1",
   "title": "{{ .Site.Title }}",
-  "home_page_url": "{{ .Site.BaseURL }}",
-  "feed_url": "{{ .Site.BaseURL }}feed.json",
+  "home_page_url": "{{ "/" | absURL }}",
+  "feed_url": "{{ "index.json" | absURL }}",
   "description": "{{ .Site.Params.description }}",
-  "favicon": "{{ .Site.BaseURL }}/icon_test.ico",
+  "favicon": "{{ "icon_test.ico" | absURL }}",
   "expired": false,
   "author": {
     "name": "{{ .Site.Params.author }}",
-    "url": "{{ .Site.BaseURL }}"
+    "url": "{{ "/" | absURL }}"
   },
   "items": [
-    {{ $list := (where .Site.RegularPages "Section" "posts") }}
+    {{ $list := (where .Site.RegularPages "Section" "blog") }}
     {{ $len := (len $list) }}
 
     {{ range $index, $element := $list }}
@@ -22,11 +22,11 @@
       "content_text": {{ .Content | plainify | jsonify }},
       "content_html": {{ .Content | jsonify }},
       "url": {{ .Permalink | jsonify }},
-      "date_published": "{{ .Date.Format `2016-02-09T14:22:00-07:00` | safeHTML }}",
-      "date_modified": "{{ .Date.Format `2016-02-09T14:22:00-07:00` | safeHTML }}",
+      "date_published": "{{ .Date.Format `2006-01-02T15:04:05-07:00` | safeHTML }}",
+      "date_modified": "{{ .Date.Format `2006-01-02T15:04:05-07:00` | safeHTML }}",
       "author": {
         "name": "{{ .Site.Params.author }}",
-        "url": "{{ .Site.BaseURL }}"
+        "url": "{{ "/" | absURL }}"
       }
     }{{ if ne (add $index 1) $len }},{{ end }}
     {{ end }}

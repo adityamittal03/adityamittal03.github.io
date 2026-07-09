@@ -1,8 +1,9 @@
+{{ $siteAuthor := .Site.Params.author | default .Site.Title }}
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Liste - {{ .Site.BaseURL }}">
+    <meta name="author" content="{{ $siteAuthor }}">
     <title>{{ if eq .IsHome true }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
     <meta name="description" content="{{ if ne .Description "" }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
     {{ template "_internal/opengraph.html" . }}
@@ -10,17 +11,17 @@
     {{ template "_internal/google_analytics.html" . }}    <link rel="canonical" href="{{ .Permalink }}">
     
     <!-- Favicons -->
-    <link rel="icon" type="image/x-icon" href="{{ .Site.BaseURL }}/icon_test.ico">
-    <link rel="icon" type="image/x-icon" sizes="16x16" href="{{ .Site.BaseURL }}/icon_test.ico">
-    <link rel="icon" type="image/x-icon" sizes="32x32" href="{{ .Site.BaseURL }}/icon_test.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.BaseURL }}/icon_test.ico">
-    <link rel="icon" type="image/x-icon" sizes="192x192" href="{{ .Site.BaseURL }}/icon_test.ico">
-    <link rel="icon" type="image/x-icon" sizes="512x512" href="{{ .Site.BaseURL }}/icon_test.ico">
-    <link rel="manifest" href="{{ .Site.BaseURL }}/site.webmanifest">
+    <link rel="icon" type="image/x-icon" href="{{ "icon_test.ico" | relURL }}">
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="{{ "icon_test.ico" | relURL }}">
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="{{ "icon_test.ico" | relURL }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ "icon_test.ico" | relURL }}">
+    <link rel="icon" type="image/x-icon" sizes="192x192" href="{{ "icon_test.ico" | relURL }}">
+    <link rel="icon" type="image/x-icon" sizes="512x512" href="{{ "icon_test.ico" | relURL }}">
+    <link rel="manifest" href="{{ "site.webmanifest" | relURL }}">
     
     <link rel="dns-prefetch" href="https://www.google-analytics.com">
     <link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
-    <link rel="alternate" type="application/atom+xml" title="{{ .Site.Title }}" href="{{ .Site.BaseURL }}/atom.xml" />    <link rel="alternate" type="application/json" title="{{ .Site.Title }}" href="{{ .Site.BaseURL }}/feed.json" />    <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=">
+    <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" href="{{ "index.xml" | absURL }}" />    <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script>
@@ -30,7 +31,7 @@
             document.documentElement.setAttribute('data-theme', theme);
         })();
     </script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Source+Code+Pro:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&amp;family=Source+Code+Pro:wght@400;500;600&amp;display=swap">
     {{ $styles := resources.Get "scss/styles.scss" | toCSS (dict "outputStyle" "compressed") | minify }}
     <style>{{ $styles.Content | safeCSS }}</style>
     <style>
@@ -116,7 +117,7 @@
     }
     </script>
     {{ else if .IsPage }}
-    {{ $author :=  or (.Params.author) (.Site.Author.name) }}
+    {{ $author :=  or (.Params.author) $siteAuthor }}
     {{ $org_name :=  .Site.Title }}
     <script type="application/ld+json">
     {
@@ -190,7 +191,7 @@
             }
         });
     </script>
-    <script src="{{ .Site.BaseURL }}/js/main.js"></script>
+    <script src="{{ "js/main.js" | relURL }}"></script>
     
     <!-- Dark mode functionality -->
     <script>

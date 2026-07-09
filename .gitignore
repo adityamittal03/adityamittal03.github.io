@@ -1,23 +1,58 @@
-# Hugo build artifacts
-public/
-resources/
-.hugo_build.lock
+# OS/editor metadata
+.DS_Store
+**/.DS_Store
+.vscode/
+.idea/
+.env
+.env.*
+!.env.example
 
-# Generated Hugo files (when building to root for production)
-index.html
-index.xml
-sitemap.xml
-404.html
-categories/
-tags/
-experience/
-projects/
-assets/
-js/
-*.ico
-*.png
-*.jpg
-*.jpeg
-*.webmanifest
-robots.txt
-Mittal_Aditya_Resume.pdf
+# Hugo build/cache artifacts
+/public/
+/resources/
+/.hugo_build.lock
+
+# Generated Hugo files if the site is accidentally built to the repo root
+/index.html
+/index.xml
+/sitemap.xml
+/404.html
+/categories/
+/tags/
+/experience/
+/projects/
+/assets/
+/js/
+/robots.txt
+/*.ico
+/*.webmanifest
+/*.pdf
+
+# Root-level scratch/exported media. Keep real site assets under static/.
+/*.png
+/*.jpg
+/*.jpeg
+/*.mp4
+/*.mov
+
+# Local writing scratch
+/aditya-merge.md
+/aditya-text.md
+
+# Local CAD source/export files not referenced by the static viewers
+/static/models/**/*.3mf
+/static/models/**/*.f3d
+/static/models/**/*.f3z
+
+# Unused alternate CRAFT blog media
+/static/blog/craft-hand/craft-hand-1.jpg
+/static/blog/craft-hand/craft-hand-2.jpg
+/static/blog/craft-hand/craft-hand-3.jpg
+/static/blog/craft-hand/craft-hand-3.png
+/static/blog/craft-hand/craft-hand-current-build.png
+/static/blog/craft-hand/i2rt-yam-mounted-hand.jpg
+/static/blog/craft-hand/i2rt-yam-mounted-hand-top-view.jpg
+/static/blog/craft-hand/wrist-mount.png
+/static/blog/craft-hand/videos/desktop-finger-teleop.mp4
+/static/blog/craft-hand/videos/desktop-fist-teleop.mp4
+/static/blog/craft-hand/videos/yam-ultra-wrist-rotation-right-side.mp4

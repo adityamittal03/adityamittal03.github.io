@@ -8,15 +8,39 @@
     {{ partial "header.html" . }}
     <section>
       {{ .Content }}
-      <ul reversed class="list">
-        {{ range .Pages }}
-          <li>
-            <a class="link" href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}
+      {{ if eq .Section "blog" }}
+        <div class="blog-card-list" aria-label="Blog posts">
+          {{ range .Pages.ByDate.Reverse }}
+            <a class="blog-card" href="{{ .RelPermalink }}" title="{{ .Title }}">
+              <span class="blog-card-thumb">
+                {{ with .Params.image }}
+                  <img src="{{ . | relURL }}" alt="">
+                {{ else }}
+                  <span class="blog-card-fallback" aria-hidden="true">Post</span>
+                {{ end }}
+              </span>
+              <span class="blog-card-copy">
+                <span class="blog-card-title">{{ .Title }}</span>
+                {{ with .Description }}
+                  <span class="blog-card-desc">{{ . }}</span>
+                {{ end }}
+                <time class="blog-card-date" datetime="{{ dateFormat "2006-01-02" .Date }}">{{ dateFormat "January 2, 2006" .Date }}</time>
+              </span>
             </a>
-            <hr class="hr-list">
-            <time class="g time" datetime="{{ dateFormat "2006-01-02" .Date }}">{{ dateFormat "02/01/06" .Date }}</time>
-          </li>
-        {{ end }}      </ul>
+          {{ end }}
+        </div>
+      {{ else }}
+        <ul reversed class="list">
+          {{ range .Pages }}
+            <li>
+              <a class="link" href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Title }}
+              </a>
+              <hr class="hr-list">
+              <time class="g time" datetime="{{ dateFormat "2006-01-02" .Date }}">{{ dateFormat "02/01/06" .Date }}</time>
+            </li>
+          {{ end }}
+        </ul>
+      {{ end }}
     </section>
   </div>
 </main>

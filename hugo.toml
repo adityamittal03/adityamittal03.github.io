@@ -2,6 +2,7 @@ baseURL = 'https://adityamittal03.github.io'
 languageCode = 'en-us'
 title = 'Aditya Mittal - About Me'
 theme = 'maverick'
+ignoreFiles = ['(^|/)\\.DS_Store$']
 
 [build]
   publishDir = 'public'
@@ -20,22 +21,10 @@ theme = 'maverick'
 
 [menu]
   [[menu.main]]
-    identifier = "papers"
-    name = "Papers"
-    url = "/#papers"
-    weight = 1
-  
-  [[menu.main]]
-    identifier = "talks"
-    name = "Talks"
-    url = "/#talks"
-    weight = 2
-
-  [[menu.main]]
-    identifier = "experience"
-    name = "Experience"
-    url = "/experience"
-    weight = 3
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog/"
+    weight = 4
 
 [markup]
   [markup.goldmark.renderer]

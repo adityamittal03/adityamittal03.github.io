@@ -6,7 +6,7 @@
   <main id="main">
   <div class="content">
     {{ partial "header.html" . }}
-    <section>
+    <section{{ if eq .Section "blog" }} class="blog-post"{{ end }}>
       <h2 class="post">{{ .Title }}</h2>
       {{ .Content }}
       {{ if ne .Section "pages" }}
@@ -15,7 +15,7 @@
         {{ $taxonomy := "tags" }} {{ with .Param $taxonomy }}
         {{ range $index, $tag := . }} {{ with $.Site.GetPage (printf "/%s/%s"
         $taxonomy $tag) -}}
-        <a href="{{ .Permalink }}">{{ $tag | urlize }}</a>
+        <a href="{{ .RelPermalink }}">{{ $tag | urlize }}</a>
         {{- end -}} {{- end -}}
         {{ end }}
       </div>
