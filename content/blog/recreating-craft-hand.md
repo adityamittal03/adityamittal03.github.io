@@ -192,7 +192,7 @@ teleoperation stack with one dexterous hand.
     conform without over-squeezing the object.</figcaption>
   </figure>
   <figure class="craft-video-switcher__panel" id="craft-task-pour-panel" role="tabpanel" aria-labelledby="craft-task-pour-tab" hidden>
-    <video controls preload="metadata" playsinline muted src="/blog/craft-hand/videos/vision-teleop-pour-setup.mp4"></video>
+    <video controls preload="metadata" playsinline muted src="/blog/craft-hand/videos/wine-pour.mp4?v=20260709c"></video>
     <figcaption>More complex wine-pouring setup with GLIDE guardrails, where the hand,
     robot, camera, and workspace must stay coordinated.</figcaption>
   </figure>
