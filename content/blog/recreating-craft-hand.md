@@ -185,7 +185,7 @@ teleoperation stack with one dexterous hand.
     <button class="craft-video-switcher__tab" type="button" role="tab" id="craft-task-pour-tab" aria-controls="craft-task-pour-panel" aria-selected="false">Wine Pouring</button>
   </div>
   <figure class="craft-video-switcher__panel is-active" id="craft-task-cup-panel" role="tabpanel" aria-labelledby="craft-task-cup-tab">
-    <video controls preload="metadata" playsinline muted src="/blog/craft-hand/videos/vision-teleop-table-grasp.mp4?v=20260709b"></video>
+    <video controls preload="metadata" playsinline muted src="/blog/craft-hand/videos/cup-pick-and-place.mp4?v=20260709c"></video>
     <figcaption>Pick-and-place with a white cup, where compliance helps the fingers
     conform without over-squeezing the object.</figcaption>
   </figure>
