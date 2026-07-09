@@ -142,6 +142,28 @@ if (document.readyState === 'loading') {
     initCraftVideoSwitchers();
 }
 
+// Optional per-video playback speed.
+function initVideoPlaybackRates() {
+    const videos = document.querySelectorAll('video[data-playback-rate]');
+    videos.forEach(function(video) {
+        const rate = parseFloat(video.getAttribute('data-playback-rate'));
+        if (!Number.isFinite(rate) || rate <= 0) return;
+
+        video.defaultPlaybackRate = rate;
+        video.playbackRate = rate;
+        video.addEventListener('loadedmetadata', function() {
+            video.defaultPlaybackRate = rate;
+            video.playbackRate = rate;
+        });
+    });
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initVideoPlaybackRates);
+} else {
+    initVideoPlaybackRates();
+}
+
 // Autoplay muted videos as they enter the viewport, and pause them when they leave.
 document.addEventListener('DOMContentLoaded', function() {
     const videos = Array.from(document.querySelectorAll('video'));
