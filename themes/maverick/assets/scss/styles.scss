@@ -1322,6 +1322,26 @@ html {
     line-height: 1.35;
 }
 
+.craft-hero-video,
+.craft-video-switcher__panel {
+    position: relative;
+}
+
+.video-speed-badge {
+    position: absolute;
+    left: 0.55rem;
+    bottom: 2.2rem;
+    z-index: 2;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.72);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1;
+    padding: 0.25rem 0.4rem;
+    pointer-events: none;
+}
+
 .craft-video-switcher {
     margin: 1rem 0 1.75rem;
 }

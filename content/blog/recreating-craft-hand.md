@@ -22,6 +22,7 @@ images:
     </figure>
     <figure class="craft-hero-video">
       <video controls preload="metadata" playsinline muted data-playback-rate="2" src="/blog/craft-hand/videos/orange-pick-and-place.mp4?v=20260709c"></video>
+      <span class="video-speed-badge">2x</span>
       <figcaption>Quest-based teleoperation for an orange pick-and-place task.</figcaption>
     </figure>
   </div>
@@ -185,7 +186,8 @@ teleoperation stack with one dexterous hand.
     <button class="craft-video-switcher__tab" type="button" role="tab" id="craft-task-pour-tab" aria-controls="craft-task-pour-panel" aria-selected="false">Wine Pouring</button>
   </div>
   <figure class="craft-video-switcher__panel is-active" id="craft-task-cup-panel" role="tabpanel" aria-labelledby="craft-task-cup-tab">
-    <video controls preload="metadata" playsinline muted src="/blog/craft-hand/videos/cup-pick-and-place.mp4?v=20260709c"></video>
+    <video controls preload="metadata" playsinline muted data-playback-rate="1.5" src="/blog/craft-hand/videos/cup-pick-and-place.mp4?v=20260709c"></video>
+    <span class="video-speed-badge">1.5x</span>
     <figcaption>Pick-and-place with a white cup, where compliance helps the fingers
     conform without over-squeezing the object.</figcaption>
   </figure>
