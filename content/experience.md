@@ -4,7 +4,7 @@ date: 2025-12-31
 draft: false
 ---
 
-Here is the <a href="/Aditya_Mittal___Resume.pdf" target="_blank">PDF version</a> of my resume.
+Here is the <a href="/aditya-mittal-resume.pdf" target="_blank">PDF version</a> of my resume.
 
 ### Education
 
@@ -59,7 +59,7 @@ Here is the <a href="/Aditya_Mittal___Resume.pdf" target="_blank">PDF version</a
         Data Structures & Algorithms, Probability Theory, Applied Linear Algebra, Multivariate Data Analysis, Real Analysis, High-Performance Statistical Computing, Statistical Learning, Machine Learning
         <br>
         <h3>Honors Thesis</h3>
-        <strong>TowerDebias:</strong> A Novel Debiasing Method Based on the Tower Property <a href="/STA194H_paper.pdf" class="social-icon" title="STA194H Honors Thesis" target="_blank">{{< icon "cv" >}}</a>
+        <strong>TowerDebias:</strong> A Novel Debiasing Method Based on the Tower Property <a href="/towerdebias-honors-thesis.pdf" class="social-icon" title="STA194H Honors Thesis" target="_blank">{{< icon "cv" >}}</a>
     </div>
 </div>
 

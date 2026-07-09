@@ -1,1 +1,1 @@
-{"name":"Aditya Mittal","short_name":"AM","icons":[{"src":"/icon_test.ico","sizes":"192x192","type":"image/x-icon"},{"src":"/icon_test.ico","sizes":"512x512","type":"image/x-icon"}],"theme_color":"#8B4513","background_color":"#fffdfa","display":"standalone"}
+{"name":"Aditya Mittal","short_name":"AM","icons":[{"src":"/favicon.ico","sizes":"192x192","type":"image/x-icon"},{"src":"/favicon.ico","sizes":"512x512","type":"image/x-icon"}],"theme_color":"#8B4513","background_color":"#fffdfa","display":"standalone"}

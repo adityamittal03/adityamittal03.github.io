@@ -934,6 +934,7 @@ html {
 .craft-overview-layout figure,
 .craft-process-gallery figure,
 .craft-finger-motion figure,
+.craft-mount-before-row figure,
 .craft-mount-gallery figure,
 .craft-teleop-layout figure,
 .craft-video-grid figure {
@@ -1023,6 +1024,7 @@ html {
 
 .craft-hero-pair figcaption,
 .craft-overview-layout figcaption,
+.craft-mount-before-row figcaption,
 .craft-mount-gallery figcaption,
 .craft-mount-before figcaption,
 .craft-teleop-featured figcaption,
@@ -1053,14 +1055,45 @@ html {
     margin: 1rem auto 1.5rem;
 }
 
-.craft-mount-before img {
-    display: block;
-    width: 100%;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
+.craft-mount-before__frame {
+    aspect-ratio: 6 / 5;
+    overflow: hidden;
     border: 1px solid var(--border-color);
     border-radius: 8px;
     background: var(--bg-secondary);
+}
+
+.craft-mount-before__frame img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border: 0;
+    border-radius: 0;
+}
+
+.craft-mount-before-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    align-items: start;
+    margin: 1rem 0 1.5rem;
+}
+
+.craft-mount-before-row .craft-mount-before {
+    max-width: none;
+    margin: 0;
+}
+
+.craft-mount-before__setup img {
+    object-fit: contain;
+    object-position: center;
+    transform: none;
+}
+
+.craft-mount-before__adapter img {
+    object-position: center;
+    transform: none;
 }
 
 .craft-mount-gallery {
@@ -1122,13 +1155,15 @@ html {
     object-fit: cover;
     border: 1px solid var(--border-color);
     border-radius: 8px;
-    background: #000;
+    background: var(--bg-primary);
 }
 
 .craft-teleop-featured--vertical video {
     aspect-ratio: 4 / 5;
     height: auto;
+    max-height: 560px;
     object-fit: cover;
+    object-position: center bottom;
 }
 
 @media (max-width: 640px) {
@@ -1178,6 +1213,19 @@ html {
 
     .craft-mount-gallery {
         grid-template-columns: 1fr;
+    }
+
+    .craft-mount-before-row {
+        grid-template-columns: 1fr;
+    }
+
+    .craft-mount-before__frame {
+        aspect-ratio: 6 / 5;
+    }
+
+    .craft-mount-before__adapter img {
+        object-fit: contain;
+        object-position: center;
     }
 
     .craft-mount-gallery img {
@@ -1248,11 +1296,11 @@ html {
     display: block;
     width: 100%;
     height: 430px;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center center;
     border: 1px solid var(--border-color);
     border-radius: 8px;
-    background: #000;
+    background: var(--bg-primary);
 }
 
 .craft-finger-motion__teleop-frame {
@@ -1260,7 +1308,7 @@ html {
     overflow: hidden;
     border: 1px solid var(--border-color);
     border-radius: 8px;
-    background: var(--bg-secondary);
+    background: var(--bg-primary);
 }
 
 .craft-finger-motion .craft-finger-motion__teleop-frame video {
@@ -1268,8 +1316,8 @@ html {
     border: 0;
     border-radius: 0;
     object-fit: contain;
-    background: var(--bg-secondary);
-    transform: scale(1.08);
+    background: var(--bg-primary);
+    transform: none;
     transform-origin: center;
 }
 
@@ -1281,7 +1329,7 @@ html {
     .craft-finger-motion video {
         height: 340px;
         max-height: 620px;
-        object-fit: cover;
+        object-fit: contain;
     }
 
     .craft-finger-motion__teleop-frame {
@@ -1312,7 +1360,7 @@ html {
     object-fit: contain;
     border: 1px solid var(--border-color);
     border-radius: 8px;
-    background: #000;
+    background: var(--bg-primary);
 }
 
 .craft-video-grid figcaption {
@@ -1387,7 +1435,7 @@ html {
     object-fit: contain;
     border: 1px solid var(--border-color);
     border-radius: 8px;
-    background: #000;
+    background: var(--bg-primary);
 }
 
 .craft-video-switcher__panel figcaption {

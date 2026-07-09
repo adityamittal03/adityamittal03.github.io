@@ -32,27 +32,26 @@
 /*.png
 /*.jpg
 /*.jpeg
+/*.svg
 /*.mp4
 /*.mov
+/*.m4v
+/*.webm
+/*.avi
+/*.mkv
+/*.webp
+/*.gif
+/*.avif
+/*.bmp
+/*.tif
+/*.tiff
+/*.heic
+/*.heif
 
-# Local writing scratch
-/aditya-merge.md
+# Local writing draft used before syncing into content/
 /aditya-text.md
 
 # Local CAD source/export files not referenced by the static viewers
 /static/models/**/*.3mf
 /static/models/**/*.f3d
 /static/models/**/*.f3z
-
-# Unused alternate CRAFT blog media
-/static/blog/craft-hand/craft-hand-1.jpg
-/static/blog/craft-hand/craft-hand-2.jpg
-/static/blog/craft-hand/craft-hand-3.jpg
-/static/blog/craft-hand/craft-hand-3.png
-/static/blog/craft-hand/craft-hand-current-build.png
-/static/blog/craft-hand/i2rt-yam-mounted-hand.jpg
-/static/blog/craft-hand/i2rt-yam-mounted-hand-top-view.jpg
-/static/blog/craft-hand/wrist-mount.png
-/static/blog/craft-hand/videos/desktop-finger-teleop.mp4
-/static/blog/craft-hand/videos/desktop-fist-teleop.mp4
-/static/blog/craft-hand/videos/yam-ultra-wrist-rotation-right-side.mp4

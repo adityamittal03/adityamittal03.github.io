@@ -14,7 +14,7 @@ ignoreFiles = ['(^|/)\\.DS_Store$']
   pages = "/:slug"
 
 [params]
-  logo = '/icon_test.png'
+  logo = '/site-icon.jpg'
   description = "I'm a Masters student at UC Irvine, and my research interests are in fairness in machine learning."
   author = 'Aditya Mittal'
   items = 10

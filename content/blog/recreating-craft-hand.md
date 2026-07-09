@@ -3,25 +3,25 @@ title: "Recreating CRAFT: Hardware Lessons for Dexterous Manipulation"
 date: 2026-06-23T14:50:27-04:00
 draft: false
 description: "A hands-on build log for recreating CRAFT, a tendon-driven robot hand with hybrid hard-soft compliance."
-image: "/blog/craft-hand/craft-hand-1.png"
+image: "/blog/craft-hand/craft-completed-hand.png"
 images:
-  - "/blog/craft-hand/craft-hand-1.png"
+  - "/blog/craft-hand/craft-completed-hand.png"
 ---
 
 <p class="post-subcaption">A hands-on walkthrough of my experience rebuilding CRAFT and its integration with a bimanual robot setup for complex real-world manipulation tasks.</p>
 
 <div class="craft-hero-pair" aria-label="CRAFT build teaser">
   <figure class="craft-hero-primary">
-    <img src="/blog/craft-hand/craft-hand-1.png" alt="Assembled CRAFT robot hand with fingers extended on a lab bench">
+    <img src="/blog/craft-hand/craft-completed-hand.png" alt="Assembled CRAFT robot hand with fingers extended on a lab bench">
     <figcaption>Completed CRAFT hand with compliant fingers, routed tendons, and compact actuators.</figcaption>
   </figure>
   <div class="craft-hero-stack">
     <figure>
-      <img src="/blog/craft-hand/i2rt-yam-craft-mounted-front.jpg" alt="CRAFT hand mounted on the left I2RT Yam arm in the bimanual tabletop setup">
+      <img src="/blog/craft-hand/craft-mounted-i2rt-yam-front.jpg" alt="CRAFT hand mounted on the left I2RT Yam arm in the bimanual tabletop setup">
       <figcaption>CRAFT integration with the I2RT Yam setup for tabletop bimanual manipulation.</figcaption>
     </figure>
     <figure class="craft-hero-video">
-      <video controls preload="metadata" playsinline muted data-playback-rate="2" src="/blog/craft-hand/videos/orange-pick-and-place.mp4?v=20260709c"></video>
+      <video controls preload="metadata" playsinline muted data-playback-rate="2" src="/blog/craft-hand/videos/craft-orange-pick-place-teleop.mp4?v=20260709c"></video>
       <span class="video-speed-badge">2x</span>
       <figcaption>Quest-based teleoperation for an orange pick-and-place task.</figcaption>
     </figure>
@@ -57,7 +57,7 @@ demonstrates teleoperation with delicate objects such as eggs, raspberries, chip
 wine glasses.</p>
   </div>
   <figure>
-    <video controls autoplay loop muted playsinline preload="metadata" aria-label="Original CRAFT robot hand from the project paper" src="/blog/craft-hand/original-craft-hand.mp4"></video>
+    <video controls autoplay loop muted playsinline preload="metadata" aria-label="Original CRAFT robot hand from the project paper" src="/blog/craft-hand/craft-original-hand-demo.mp4"></video>
     <figcaption>Original CRAFT hand, showing the compact tendon-driven layout and compliant fingers.</figcaption>
   </figure>
 </div>
@@ -80,18 +80,18 @@ palm for tendon integration.
 
 <div class="craft-process-gallery" aria-label="Compliant finger build process">
   <figure>
-    <img src="/blog/craft-hand/compliant-finger-bend-test.jpg" alt="Single compliant CRAFT finger module bent by hand during assembly">
+    <img src="/blog/craft-hand/craft-single-finger-bend-test.jpg" alt="Single compliant CRAFT finger module bent by hand during assembly">
     <figcaption>Single finger module bent by hand: white PLA links preserve structure,
     while black TPU joints provide the compliant motion.</figcaption>
   </figure>
   <figure>
-    <img src="/blog/craft-hand/compliant-finger-modules.jpg" alt="Several assembled CRAFT compliant finger modules laid out on a workbench">
+    <img src="/blog/craft-hand/craft-finger-modules-assembly.jpg" alt="Several assembled CRAFT compliant finger modules laid out on a workbench">
     <figcaption>Four completed fingers beside the fifth finger still in assembly. The
     unfinished module shows the alignment challenge: each pin, fastener, and TPU joint had
     to seat cleanly so the fingers could bend without binding.</figcaption>
   </figure>
   <figure>
-    <img src="/blog/craft-hand/compliant-fingers-palm-layout.jpg" alt="CRAFT finger modules laid out around the palm plate before final assembly">
+    <img src="/blog/craft-hand/craft-fingers-palm-layout.jpg" alt="CRAFT finger modules laid out around the palm plate before final assembly">
     <figcaption>Finger modules staged around the PLA palm plate, checking spacing and
     orientation before tendon routing and final mounting.</figcaption>
   </figure>
@@ -105,14 +105,14 @@ from the same motor command.
 
 <div class="craft-finger-motion" aria-label="Tendon-driven compliant finger motion videos">
   <figure>
-    <video controls preload="metadata" playsinline muted src="/blog/craft-hand/videos/tendon-driven-finger-motion.mp4?v=20260709b"></video>
+    <video controls preload="metadata" playsinline muted src="/blog/craft-hand/videos/craft-tendon-finger-motion.mp4?v=20260709c"></video>
     <figcaption>Manual tendon test during assembly. The bottom row of motors shows
     side-to-side motion, the middle row shows forward/backward finger bend, and the top
     motor shows finger curl.</figcaption>
   </figure>
   <figure class="craft-finger-motion__teleop">
     <div class="craft-finger-motion__teleop-frame">
-      <video controls preload="metadata" playsinline muted src="/blog/craft-hand/videos/desktop-first-teleop-2.mp4?v=20260709a"></video>
+      <video controls preload="metadata" playsinline muted src="/blog/craft-hand/videos/craft-initial-hand-tracking-teleop.mp4?v=20260709b"></video>
     </div>
     <figcaption>Initial teleoperation test using hand tracking to send CRAFT motor
     commands.</figcaption>
@@ -129,11 +129,23 @@ the robot platform. As an initial sanity check, the payload budget was sufficien
 Ultra is rated for 4 kg, while CRAFT is reported at about 800 g. This left enough margin
 for the adapter, fasteners, and wiring.
 
-<figure class="craft-mount-before">
-  <img src="/blog/craft-hand/i2rt-yam-original-gripper-arm.jpg" alt="I2RT Yam robot arm with its original gripper before mounting the CRAFT hand">
-  <figcaption>Yam Ultra arm with the stock parallel-jaw gripper before the CRAFT
-  retrofit.</figcaption>
-</figure>
+<div class="craft-mount-before-row" aria-label="Yam Ultra wrist before the CRAFT retrofit">
+  <figure class="craft-mount-before craft-mount-before__setup">
+    <div class="craft-mount-before__frame">
+      <img src="/blog/craft-hand/i2rt-yam-bimanual-setup.png?v=20260709e" alt="I2RT Yam bimanual robot setup before mounting the CRAFT hand">
+    </div>
+    <figcaption>I2RT Yam bimanual setup with the original gripper. The hexagonal wrist
+    mount allows wrist rotation when attached to the arm.</figcaption>
+  </figure>
+  <figure class="craft-mount-before craft-mount-before__adapter">
+    <div class="craft-mount-before__frame">
+      <img src="/blog/craft-hand/craft-yam-wrist-mount-adapter.png?v=20260709e" alt="Printable wrist mount adapter for mounting CRAFT on the Yam Ultra arm">
+    </div>
+    <figcaption>3D CAD design of the wrist mount adapter used to connect CRAFT to the Yam
+    Ultra wrist. Starting from the provided hand base, I attached the hexagonal adapter and
+    printed the mount as one object.</figcaption>
+  </figure>
+</div>
 
 To create an adapter, I used Autodesk Fusion and the available I2RT STL files as the
 starting geometry for a printable wrist mount. The design requirements were mostly
@@ -145,12 +157,12 @@ teleoperation stack with one dexterous hand.
 
 <div class="craft-mount-gallery" aria-label="CRAFT mounted on the I2RT Yam setup">
   <figure class="craft-mount-gallery__wide">
-    <img src="/blog/craft-hand/i2rt-yam-craft-mounted-front.jpg" alt="CRAFT hand mounted on the left I2RT Yam arm in the bimanual tabletop setup">
+    <img src="/blog/craft-hand/craft-mounted-i2rt-yam-front.jpg" alt="CRAFT hand mounted on the left I2RT Yam arm in the bimanual tabletop setup">
     <figcaption>The bimanual I2RT Yam workspace staged for teleoperation and policy
     deployment, with CRAFT mounted on the left arm.</figcaption>
   </figure>
   <figure class="craft-mount-gallery__portrait">
-    <img src="/blog/craft-hand/i2rt-yam-mounted-hand-top-view.png?v=20260709c" alt="Top view of CRAFT hand mounted on the I2RT Yam setup near tabletop task objects">
+    <img src="/blog/craft-hand/craft-mounted-i2rt-yam-top-view.png?v=20260709c" alt="Top view of CRAFT hand mounted on the I2RT Yam setup near tabletop task objects">
     <figcaption>Top view of the mounted hand, showing the wrist mount alignment with the
     existing arm mount.</figcaption>
   </figure>
@@ -174,7 +186,7 @@ teleoperation stack with one dexterous hand.
     still provides the task-level motion.</p>
   </div>
   <figure class="craft-teleop-featured craft-teleop-featured--vertical">
-    <video controls preload="metadata" playsinline muted src="/blog/craft-hand/videos/physical-vr-teleop.mp4"></video>
+    <video controls preload="metadata" playsinline muted src="/blog/craft-hand/videos/craft-quest-vr-teleop.mp4?v=20260709b"></video>
     <figcaption>Quest-based VR teleoperation uses Quest hand tracking to map operator
     hand motion to CRAFT motor commands.</figcaption>
   </figure>
@@ -186,13 +198,13 @@ teleoperation stack with one dexterous hand.
     <button class="craft-video-switcher__tab" type="button" role="tab" id="craft-task-pour-tab" aria-controls="craft-task-pour-panel" aria-selected="false">Wine Pouring</button>
   </div>
   <figure class="craft-video-switcher__panel is-active" id="craft-task-cup-panel" role="tabpanel" aria-labelledby="craft-task-cup-tab">
-    <video controls preload="metadata" playsinline muted data-playback-rate="1.5" src="/blog/craft-hand/videos/cup-pick-and-place.mp4?v=20260709c"></video>
+    <video controls preload="metadata" playsinline muted data-playback-rate="1.5" src="/blog/craft-hand/videos/craft-cup-pick-place-teleop.mp4?v=20260709c"></video>
     <span class="video-speed-badge">1.5x</span>
     <figcaption>Pick-and-place with a white cup, where compliance helps the fingers
     conform without over-squeezing the object.</figcaption>
   </figure>
   <figure class="craft-video-switcher__panel" id="craft-task-pour-panel" role="tabpanel" aria-labelledby="craft-task-pour-tab" hidden>
-    <video controls preload="metadata" playsinline muted src="/blog/craft-hand/videos/wine-pour.mp4?v=20260709c"></video>
+    <video controls preload="metadata" playsinline muted src="/blog/craft-hand/videos/craft-wine-pouring-teleop.mp4?v=20260709c"></video>
     <figcaption>More complex wine-pouring setup with GLIDE guardrails, where the hand,
     robot, camera, and workspace must stay coordinated.</figcaption>
   </figure>
@@ -207,63 +219,57 @@ wine-serving behavior while GLIDE filters unstable commands around the grasp and
 
 <div class="craft-video-grid" aria-label="Pi0.5 policy rollout video">
   <figure>
-    <video controls preload="metadata" playsinline muted src="/blog/craft-hand/videos/wine-serving.mp4"></video>
+    <video controls preload="metadata" playsinline muted src="/blog/craft-hand/videos/craft-wine-serving-policy-rollout.mp4"></video>
     <figcaption>Pi0.5 wine-serving policy rollout with GLIDE guardrails filtering unstable commands.</figcaption>
   </figure>
 </div>
 
 ## Challenges and Lessons Learned
 
-As a beginner, some lessons were obvious only after the fact. The hard part was turning a
-printed hand into a dependable robot system: parts, assembly, calibration, contact, and
-real-robot debugging.
+As a beginner to hardware projects, some lessons seem obvious in hindsight, but they are
+still worth highlighting because others might run into similar challenges. For this
+project, the hardest part was turning a printed hand into a dependable robot system:
+parts, assembly, calibration, contact, and real-robot debugging.
 
-- Spares matter more than expected. The parts list was not the issue; my assumption was
-  that exact quantities would be enough. A broken motor, missing screw, or failed print can
-  turn into a one- or two-week delay without extra screws, bearings, tendons, inserts, and
-  at least one spare actuator.
-- Retargeting was not plug-and-play. The Quest gave us a usable hand pose, but the mapping
-  to CRAFT still needed calibration. Thumb motion needed more useful side-to-side control,
-  and even a small wrist-frame mismatch could make the robot feel unintuitive.
-- Camera views matter for debugging. The initial setup did not have a wrist camera, which
-  made it harder to see contact from the hand's perspective. Adding a wrist camera helped,
-  but the current video still does not give the clearest view of grasps, slip, and contact
-  during manipulation.
-- Contact was more than closing the fingers. The hand could wrap around a bottle and still
-  slip during pouring, which made it clear that enclosing an object is not the same as
-  gripping it. Friction tape helped temporarily, but better fingertip pads or coatings would
-  make contact more reliable.
-- Motor torque became a real hardware limit. The small DYNAMIXEL servos keep CRAFT compact
-  and affordable, but they limit grasp strength during stronger holds, slip recovery, and
+- Buy spare parts! I made the mistake of ordering the exact quantity of components. First,
+  I ran out of metal dowels after some were lost. Then, a motor broke during construction
+  and I did not have a replacement. These unnecessary delays added over a week to the build
+  and kept us from starting robot experiments earlier.
+- Camera views matter. The initial arm setup did not provide a good view from the hand's
+  perspective. We added a camera mount on top of CRAFT to visualize contact, but our setup
+  still makes it hard to see grasp formation and slip clearly. It would be useful to add
+  more cameras from other perspectives.
+- Object slip was a recurring challenge. For example, the hand could wrap around the wine
+  bottle and still slip during pouring. This showed that we needed a stronger grasp, not
+  just finger closure. Friction tape reduced some slip, but we still want better grip
+  assistance.
+- Motor torque can become a hardware limit. The small DYNAMIXEL servos keep CRAFT compact
+  and affordable, but they limit grasp strength during firm grasps, slip recovery, and
   tasks where the object applies a moment to the fingers.
-- Simulation stopped short of the full system. Once CRAFT was mounted on the Yam arm with
-  the adapter and tendon routing, many issues only appeared on hardware. A better Yam +
-  CRAFT simulation would make it easier to test retargeting, wrist alignment, and policy
-  rollouts before real-robot trials.
+
+The main lesson is that getting a full hardware setup working takes much more effort than
+getting one part to move correctly. It also takes time to make the setup repeatable, since
+small changes in assembly, calibration, contact, or object placement can change the
+outcome.
 
 ## Next Steps
 
-The next goal is to turn the build from a working prototype into a repeatable experiment
-platform. That means reducing the amount of manual adjustment needed between runs and
-making failures easier to diagnose.
+The next goal is to improve the retargeting and teleoperation infrastructure to create a
+repeatable experiment platform for data collection. This includes reducing the amount of
+manual adjustment needed between runs and making failures easier to diagnose.
 
-- Standardize maintenance. Keep a small spare-parts kit for screws, bearings, tendons,
-  inserts, and actuators, then document the assembly order and common failure points so
-  repairs do not depend on memory.
-- Make tendon routing more repeatable. Cleaner exits, better retensioning points, and less
-  rubbing would make finger motion more consistent. Finger modules should also be easier to
-  remove without disturbing the rest of the hand.
+- Make tendon routing more precise. Better retensioning points between experiments would
+  make the mapping from motor commands to finger motion more consistent. Finger modules
+  should also be easier to remove without disturbing the rest of the hand.
 - Improve fingertip contact. Replace the temporary friction tape with pads or coatings that
-  provide repeatable grip without making the fingers too stiff. This would make pouring and
-  heavier grasps less sensitive to slip.
-- Turn calibration into a procedure. Thumb retargeting and wrist-frame alignment should use
-  a short routine with saved parameters, rather than being adjusted by feel each session.
-- Build an integrated Yam + CRAFT simulation. The simulation should include the adapter,
-  wrist limits, approximate hand geometry, and task objects, so retargeting and simple
-  policy changes can be tested before hardware trials.
-- Add contact feedback. Fingertip tactile sensing, or even simpler slip/contact indicators,
-  would make it easier to understand why a grasp fails instead of relying only on camera
-  views and visual inspection.
+  provide repeatable grip without making the fingers too stiff. It would also be useful to
+  add fingertip contact feedback, so grasp failures are not diagnosed only from camera views
+  and visual inspection.
+- Improve the simulation environment. The current XML files have some errors, and we do not
+  yet have infrastructure to train policies or collect data with simulation and RL. A better
+  Yam + CRAFT simulation would support larger-scale data collection for manipulation tasks.
+- Improve thumb calibration. Thumb retargeting should support more complex grasps and
+  pinches; the current Quest retargeting still leaves room for improvement.
 
 ## Citations
 
@@ -274,6 +280,7 @@ making failures easier to diagnose.
 - GLIDE: Guardrails for Learning from Infeasible Demonstrations Efficiently. Anonymous
   Authors. Preprint.
 - [pi0.5: a Vision-Language-Action Model with Open-World Generalization][pi05]
+  ([arXiv][pi05])
 
 [craft-paper]: https://craft-hand.github.io/
 [craft-arxiv]: https://arxiv.org/abs/2603.12120

@@ -5,7 +5,7 @@ description: "Master's student at UC Irvine focused on algorithmic fairness in m
 
 # Aditya Mittal
 
-<img class="avatar" src="/a2.png" alt="Aditya Mittal">
+<img class="avatar" src="/aditya-mittal-headshot.png" alt="Aditya Mittal">
 
 I am a Master's student in Computer Science at **UC Irvine**, working with [Unnat Jain](https://unnat.github.io) on efficient vision-language-action models.
 
@@ -16,7 +16,7 @@ Contact details below:
 <!--  -->
 <!-- Social icons -->
 <div class="social-icons">
-    <a href="/Aditya_Mittal___Resume.pdf" class="social-icon" title="CV">
+    <a href="/aditya-mittal-resume.pdf" class="social-icon" title="CV">
         {{< icon "cv" >}}
         <span class="email-tooltip">CV</span>
     </a>
@@ -122,7 +122,7 @@ Contact details below:
         Presented mathematical foundations of algorithmic fairness and methods to reduce bias in model predictions across demographic groups.
         <br>
         <h3> Materials </h3>
-        Poster: <a href="/machine_learning_fairness_poster.pdf" class="social-icon" title="Poster" target="_blank">
+        Poster: <a href="/machine-learning-fairness-poster.pdf" class="social-icon" title="Poster" target="_blank">
             {{< icon "cv" >}}
         </a>
     </div>
@@ -146,7 +146,7 @@ Contact details below:
         Presented the dsld R package for discrimination analysis in education, emphasizing how it teaches statistical concepts through real-world fairness and bias examples.
         <br>
         <h3> Materials </h3>
-        Slides: <a href="/dsld_slides.pdf" class="social-icon" title="Presentation Slides" target="_blank">
+        Slides: <a href="/dsld-jsm-2024-slides.pdf" class="social-icon" title="Presentation Slides" target="_blank">
             {{< icon "cv" >}}
         <!-- </a>
         <br>
@@ -175,7 +175,7 @@ Contact details below:
         Presented TowerDebias, a post-processing method that removes sensitive-variable effects from black-box models and improves fairness without retraining.
         <br>
         <h3> Materials </h3>
-        Slides: <a href="/tdb_slides.pdf" class="social-icon" title="Presentation Slides" target="_blank">
+        Slides: <a href="/towerdebias-ursca-2024-slides.pdf" class="social-icon" title="Presentation Slides" target="_blank">
             {{< icon "cv" >}}
         </a>
     </div>
@@ -200,7 +200,7 @@ Contact details below:
         Presented the dsld package for discrimination analysis in education, showing how it supports teaching statistical concepts through real-world fairness examples.
         <br>
         <h3> Materials </h3>
-        Poster: <a href="/DSLD_Research_Poster.pdf" class="social-icon" title="Poster" target="_blank">
+        Poster: <a href="/dsld-research-poster.pdf" class="social-icon" title="Poster" target="_blank">
             {{< icon "cv" >}}
         </a>
     </div>
