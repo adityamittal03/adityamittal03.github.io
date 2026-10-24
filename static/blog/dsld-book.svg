@@ -1,14 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="480" height="480" viewBox="0 0 480 480">
-  <rect width="480" height="480" fill="#eee5da"/>
-  <rect x="111" y="70" width="280" height="360" rx="16" fill="#d8c8b5"/>
-  <path d="M112 58h244a16 16 0 0 1 16 16v320H112a20 20 0 0 0 0 40h260v-20H112" fill="#fffdfa" stroke="#855b36" stroke-width="10" stroke-linejoin="round"/>
-  <path d="M112 58h244a16 16 0 0 1 16 16v320H112a25 25 0 0 0-25 25V83a25 25 0 0 1 25-25Z" fill="#855b36"/>
-  <path d="M118 60v330" stroke="#b9916d" stroke-width="5"/>
-  <text x="148" y="166" fill="#fffdfa" font-family="Georgia,serif" font-size="63" font-weight="bold">DSLD</text>
-  <path d="M150 193h178" stroke="#d8bea2" stroke-width="3"/>
-  <g fill="#fffdfa" font-family="Arial,sans-serif" font-size="23">
-    <text x="150" y="240">Data Science</text>
-    <text x="150" y="275">Looks at</text>
-    <text x="150" y="310">Discrimination</text>
-  </g>
+  <rect width="480" height="480" fill="#fffdfa"/>
+  <text x="240" y="240" fill="#000000" font-family="Arial, Helvetica, sans-serif" font-size="104" font-weight="600" text-anchor="middle" dominant-baseline="central">DSLD</text>
 </svg>
