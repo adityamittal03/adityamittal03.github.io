@@ -6,7 +6,7 @@ description: "Aditya Mittal is a master's student in Computer Science at UC Irvi
 <div class="home-intro">
 <div class="home-intro-copy">
 <h1>Aditya Mittal</h1>
-<p>I am a Master’s student in Computer Science at <strong>UC Irvine</strong>, working with <a href="https://unnat.github.io/">Unnat Jain</a> on <strong>robot learning and dexterous manipulation</strong>.</p>
+<p>I am a Master’s student in Computer Science at <strong>UC Irvine</strong>, working with <a href="https://unnat.github.io/">Unnat Jain</a> on <strong>robot learning and dexterous manipulation</strong>. <strong>I am applying to PhD programs in CS for Fall 2027.</strong></p>
 <p>I worked with Reno Kriz and Dave Doermann at <strong>Johns Hopkins University</strong> during <a href="https://hltcoe.jhu.edu/research/scale/scale-2026/">SCALE 2026</a> on open-world video anomaly understanding. I earned my BS in Statistics with highest honors at <strong>UC Davis</strong> and completed my undergraduate thesis with <a href="https://faculty.engineering.ucdavis.edu/matloff/">Norman Matloff</a>. I received an Honorable Mention for the <em>CRA Outstanding Undergraduate Researcher</em> award (2025).</p>
 <nav class="profile-links" aria-label="Contact and profiles">
     <a href="/aditya-mittal-cv.pdf">CV</a>
@@ -25,7 +25,7 @@ description: "Aditya Mittal is a master's student in Computer Science at UC Irvi
     <h3><a href="https://arxiv.org/abs/2609.24996">Learning Beyond What Humans Can Demonstrate</a></h3>
     <p class="publication-authors">Yuchen Song, <strong>Aditya Mittal</strong>, and Unnat Jain</p>
     <p class="publication-venue">Conference on Robot Learning (CoRL), 2026</p>
-    <p class="publication-summary">GLIDE generates and refines executable guardrails for data collection and policy deployment on robot manipulation tasks that are difficult for humans to demonstrate.</p>
+    <p class="publication-summary">GLIDE generates and refines executable guardrails for data collection and policy deployment on robot manipulation tasks that are too difficult for humans to demonstrate.</p>
     <div class="publication-links">
         <a href="https://arxiv.org/abs/2609.24996">Paper</a>
         <a href="https://guardrail-policy.github.io/">Project</a>
