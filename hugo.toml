@@ -11,7 +11,7 @@ ignoreFiles = ['(^|/)\\.DS_Store$']
   pages = "/:slug"
 
 [params]
-  logo = '/site-icon.jpg'
+  logo = '/aditya-mittal-headshot.png'
   description = "Aditya Mittal researches robot learning and dexterous manipulation at UC Irvine."
   author = 'Aditya Mittal'
 
