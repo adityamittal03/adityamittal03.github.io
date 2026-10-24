@@ -1,0 +1,541 @@
+/* Blog image layouts */
+.post-subcaption {
+    max-width: 100%;
+    margin: -0.25rem 0 1.25rem;
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    line-height: 1.45;
+}
+
+.blog-post p a,
+.blog-post li a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.blog-post p a:hover,
+.blog-post li a:hover {
+    color: var(--accent-color);
+}
+
+.craft-hero-pair figure,
+.craft-overview-layout figure,
+.craft-process-gallery figure,
+.craft-finger-motion figure,
+.craft-mount-before-row figure,
+.craft-mount-gallery figure,
+.craft-teleop-layout figure,
+.craft-video-grid figure {
+    min-width: 0;
+}
+
+.craft-hero-pair {
+    --craft-hero-left-height: clamp(430px, 52vw, 560px);
+    display: grid;
+    grid-template-columns: minmax(0, 0.86fr) minmax(260px, 0.8fr);
+    gap: 0.9rem;
+    align-items: start;
+    width: 100%;
+    max-width: 860px;
+    margin: 1.5rem auto 1.5rem;
+}
+
+.craft-hero-pair figure {
+    margin: 0;
+    min-height: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.craft-hero-stack {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    gap: 0.9rem;
+    min-height: 0;
+}
+
+.craft-hero-pair img,
+.craft-hero-pair video {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--bg-secondary);
+}
+
+.craft-hero-primary img {
+    height: var(--craft-hero-left-height);
+    object-fit: cover;
+    object-position: center 58%;
+    padding: 0;
+}
+
+.craft-hero-stack img,
+.craft-hero-stack video {
+    height: calc((var(--craft-hero-left-height) - 0.9rem) / 2);
+    object-fit: cover;
+}
+
+.craft-overview-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.4fr) minmax(180px, 0.6fr);
+    gap: 1.25rem;
+    align-items: start;
+    margin: 1rem 0 1.5rem;
+}
+
+.craft-overview-layout p:first-child {
+    margin-top: 0;
+}
+
+.craft-overview-layout p:last-child {
+    margin-bottom: 0;
+}
+
+.craft-overview-layout figure {
+    margin: 0;
+}
+
+.craft-overview-layout img,
+.craft-overview-layout video {
+    display: block;
+    width: 100%;
+    max-height: 410px;
+    object-fit: contain;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--bg-secondary);
+}
+
+.craft-hero-pair figcaption,
+.craft-overview-layout figcaption,
+.craft-mount-before-row figcaption,
+.craft-mount-gallery figcaption,
+.craft-mount-before figcaption,
+.craft-teleop-featured figcaption,
+.craft-teleop-layout figcaption,
+.craft-finger-motion figcaption {
+    margin-top: 0.4rem;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    line-height: 1.35;
+}
+
+.craft-hero-pair figcaption {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 0;
+    padding: 0.45rem 0.6rem 0.75rem;
+    color: #fff;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0));
+    border-radius: 8px 8px 0 0;
+    font-size: 0.86rem;
+    line-height: 1.3;
+}
+
+.craft-mount-before {
+    max-width: 620px;
+    margin: 1rem auto 1.5rem;
+}
+
+.craft-mount-before__frame {
+    aspect-ratio: 6 / 5;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--bg-secondary);
+}
+
+.craft-mount-before__frame img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border: 0;
+    border-radius: 0;
+}
+
+.craft-mount-before-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    align-items: start;
+    margin: 1rem 0 1.5rem;
+}
+
+.craft-mount-before-row .craft-mount-before {
+    max-width: none;
+    margin: 0;
+}
+
+.craft-mount-before__setup img {
+    object-fit: contain;
+    object-position: center;
+    transform: none;
+}
+
+.craft-mount-before__adapter img {
+    object-position: center;
+    transform: none;
+}
+
+.craft-mount-gallery {
+    display: grid;
+    grid-template-columns: minmax(0, 1.55fr) minmax(170px, 0.55fr);
+    gap: 1rem;
+    margin: 1rem 0 1.75rem;
+    align-items: start;
+}
+
+.craft-mount-gallery figure {
+    margin: 0;
+}
+
+.craft-mount-gallery img {
+    display: block;
+    width: 100%;
+    height: clamp(320px, 38vw, 430px);
+    object-fit: cover;
+    object-position: center;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--bg-secondary);
+}
+
+.craft-mount-gallery__portrait img {
+    object-fit: cover;
+    object-position: center;
+}
+
+.craft-teleop-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+    gap: 1.25rem;
+    align-items: start;
+    margin: 1rem 0 1.75rem;
+}
+
+.craft-teleop-layout p:first-child {
+    margin-top: 0;
+}
+
+.craft-teleop-layout p:last-child {
+    margin-bottom: 0;
+}
+
+.craft-teleop-featured {
+    margin: 1rem 0 1.75rem;
+}
+
+.craft-teleop-layout .craft-teleop-featured {
+    margin: 0;
+}
+
+.craft-teleop-featured video {
+    display: block;
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--bg-primary);
+}
+
+.craft-teleop-featured--vertical video {
+    aspect-ratio: 4 / 5;
+    height: auto;
+    max-height: 560px;
+    object-fit: cover;
+    object-position: center bottom;
+}
+
+@media (max-width: 640px) {
+    .craft-hero-pair {
+        grid-template-columns: 1fr;
+        width: 100%;
+        aspect-ratio: auto;
+    }
+
+    .craft-hero-pair img,
+    .craft-hero-pair video {
+        height: auto;
+        max-height: 480px;
+        object-fit: contain;
+    }
+
+    .craft-hero-pair figcaption {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        margin: 0;
+        padding: 0.45rem 0.6rem 0.75rem;
+        color: #fff;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0));
+        font-size: 0.78rem;
+    }
+
+    .craft-teleop-featured video {
+        height: auto;
+        max-height: 620px;
+        object-fit: contain;
+    }
+
+    .craft-teleop-featured--vertical video {
+        aspect-ratio: auto;
+    }
+
+    .craft-overview-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .craft-overview-layout img,
+    .craft-overview-layout video {
+        max-height: 450px;
+    }
+
+    .craft-mount-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .craft-mount-before-row {
+        grid-template-columns: 1fr;
+    }
+
+    .craft-mount-before__frame {
+        aspect-ratio: 6 / 5;
+    }
+
+    .craft-mount-before__adapter img {
+        object-fit: contain;
+        object-position: center;
+    }
+
+    .craft-mount-gallery img {
+        height: auto;
+        max-height: 620px;
+        object-fit: contain;
+    }
+
+    .craft-teleop-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+.craft-process-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.85rem;
+    margin: 1rem 0 1.75rem;
+}
+
+.craft-process-gallery figure {
+    margin: 0;
+}
+
+.craft-process-gallery img {
+    display: block;
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    object-position: center;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--bg-secondary);
+}
+
+.craft-process-gallery figcaption {
+    margin-top: 0.4rem;
+    color: var(--text-secondary);
+    font-size: 0.82rem;
+    line-height: 1.35;
+}
+
+@media (max-width: 760px) {
+    .craft-process-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .craft-process-gallery img {
+        height: auto;
+        max-height: 620px;
+        object-fit: contain;
+    }
+}
+
+.craft-finger-motion {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    align-items: start;
+    margin: 1rem 0 1.75rem;
+}
+
+.craft-finger-motion figure {
+    margin: 0;
+}
+
+.craft-finger-motion video {
+    display: block;
+    width: 100%;
+    height: 430px;
+    object-fit: contain;
+    object-position: center center;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--bg-primary);
+}
+
+.craft-finger-motion__teleop-frame {
+    height: 430px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--bg-primary);
+}
+
+.craft-finger-motion .craft-finger-motion__teleop-frame video {
+    height: 100%;
+    border: 0;
+    border-radius: 0;
+    object-fit: contain;
+    background: var(--bg-primary);
+    transform: none;
+    transform-origin: center;
+}
+
+@media (max-width: 760px) {
+    .craft-finger-motion {
+        grid-template-columns: 1fr;
+    }
+
+    .craft-finger-motion video {
+        height: 340px;
+        max-height: 620px;
+        object-fit: contain;
+    }
+
+    .craft-finger-motion__teleop-frame {
+        height: 340px;
+    }
+
+    .craft-finger-motion .craft-finger-motion__teleop-frame video {
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.craft-video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    margin: 1rem 0 1.75rem;
+}
+
+.craft-video-grid figure {
+    margin: 0;
+}
+
+.craft-video-grid video {
+    display: block;
+    width: 100%;
+    max-height: 420px;
+    object-fit: contain;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--bg-primary);
+}
+
+.craft-video-grid figcaption {
+    margin-top: 0.4rem;
+    color: var(--text-secondary);
+    font-size: 0.82rem;
+    line-height: 1.35;
+}
+
+.craft-hero-video,
+.craft-video-switcher__panel {
+    position: relative;
+}
+
+.video-speed-badge {
+    position: absolute;
+    left: 0.55rem;
+    bottom: 2.2rem;
+    z-index: 2;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.72);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1;
+    padding: 0.25rem 0.4rem;
+    pointer-events: none;
+}
+
+.craft-video-switcher {
+    margin: 1rem 0 1.75rem;
+}
+
+.craft-video-switcher__tabs {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.craft-video-switcher__tab {
+    appearance: none;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    cursor: pointer;
+    font: inherit;
+    font-size: 0.9rem;
+    line-height: 1.2;
+    padding: 0.55rem 0.8rem;
+}
+
+.craft-video-switcher__tab:hover,
+.craft-video-switcher__tab:focus-visible,
+.craft-video-switcher__tab.is-active {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+.craft-video-switcher__tab.is-active {
+    background: var(--paper-bg);
+}
+
+.craft-video-switcher__panel {
+    margin: 0;
+}
+
+.craft-video-switcher__panel video {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--bg-primary);
+}
+
+.craft-video-switcher__panel figcaption {
+    margin-top: 0.4rem;
+    color: var(--text-secondary);
+    font-size: 0.82rem;
+    line-height: 1.35;
+}
+
+@media (max-width: 520px) {
+    .craft-video-switcher__tabs {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

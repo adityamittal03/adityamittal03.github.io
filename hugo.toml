@@ -1,6 +1,6 @@
 baseURL = 'https://adityamittal03.github.io'
 languageCode = 'en-us'
-title = 'Aditya Mittal - About Me'
+title = 'Aditya Mittal'
 theme = 'maverick'
 ignoreFiles = ['(^|/)\\.DS_Store$']
 
@@ -15,11 +15,16 @@ ignoreFiles = ['(^|/)\\.DS_Store$']
 
 [params]
   logo = '/site-icon.jpg'
-  description = "I'm a Masters student at UC Irvine, and my research interests are in fairness in machine learning."
+  description = "Aditya Mittal researches robot learning and dexterous manipulation at UC Irvine."
   author = 'Aditya Mittal'
   items = 10
 
 [menu]
+  [[menu.main]]
+    identifier = "papers"
+    name = "Papers"
+    url = "/#papers"
+    weight = 1
   [[menu.main]]
     identifier = "blog"
     name = "Blog"

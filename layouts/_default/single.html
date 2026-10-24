@@ -1,0 +1,23 @@
+{{ define "main" }}
+    <section{{ if eq .Section "blog" }} class="blog-post"{{ end }}>
+      <h1 class="post">{{ .Title }}</h1>
+      {{ .Content }}
+      {{ if in (slice "blog" "posts") .Section }}
+      <div class="post-date">
+        <span class="g time">{{.Date.Format "January 2, 2006"}} </span> &#8729;
+        {{ $taxonomy := "tags" }} {{ with .Param $taxonomy }}
+        {{ range $index, $tag := . }} {{ with $.Site.GetPage (printf "/%s/%s"
+        $taxonomy $tag) -}}
+        <a href="{{ .RelPermalink }}">{{ $tag | urlize }}</a>
+        {{- end -}} {{- end -}}
+        {{ end }}
+      </div>
+      {{ end }}
+    </section>
+    {{ if eq .Section "posts" }}
+    {{ if eq .Site.Params.comments.enabled true }}
+    <div id="comments">
+      {{ partial "comments.html" $ }}
+    </div>    {{ end }}
+    {{ end }}
+{{ end }}
