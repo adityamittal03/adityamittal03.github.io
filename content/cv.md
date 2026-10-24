@@ -54,7 +54,7 @@ draft: false
         Data Structures & Algorithms, Probability Theory, Applied Linear Algebra, Multivariate Data Analysis, Real Analysis, High-Performance Statistical Computing, Statistical Learning, Machine Learning
         <br>
         <h3>Honors Thesis</h3>
-        <strong>TowerDebias:</strong> A Novel Debiasing Method Based on the Tower Property <a href="/towerdebias-honors-thesis.pdf" class="social-icon" title="STA194H Honors Thesis" target="_blank" rel="noopener noreferrer">{{< icon "cv" >}}</a>
+        <strong>TowerDebias:</strong> A Novel Debiasing Method Based on the Tower Property <a href="/towerdebias-honors-thesis.pdf" class="social-icon" aria-label="STA194H Honors Thesis (PDF)" title="STA194H Honors Thesis" target="_blank" rel="noopener noreferrer">{{< icon "cv" >}}</a>
     </div>
 </details>
 

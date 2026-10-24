@@ -7,7 +7,7 @@ description: "Aditya Mittal is a master's student in Computer Science at UC Irvi
 <div class="home-intro-copy">
 <h1>Aditya Mittal</h1>
 <p>I am a Master’s student in Computer Science at <strong>UC Irvine</strong>, working with <a href="https://unnat.github.io/">Unnat Jain</a> on <strong>robot learning and dexterous manipulation</strong>.</p>
-<p>I earned my BS in Statistics with highest honors at <strong>UC Davis</strong> and completed my undergraduate thesis with <a href="https://faculty.engineering.ucdavis.edu/matloff/">Norman Matloff</a>. I received an Honorable Mention for the <em>CRA Outstanding Undergraduate Researcher</em> award (2025).</p>
+<p>I worked with Reno Kriz and Dave Doermann at <strong>Johns Hopkins University</strong> during <a href="https://hltcoe.jhu.edu/research/scale/scale-2026/">SCALE 2026</a> on open-world video anomaly understanding. I earned my BS in Statistics with highest honors at <strong>UC Davis</strong> and completed my undergraduate thesis with <a href="https://faculty.engineering.ucdavis.edu/matloff/">Norman Matloff</a>. I received an Honorable Mention for the <em>CRA Outstanding Undergraduate Researcher</em> award (2025).</p>
 <nav class="profile-links" aria-label="Contact and profiles">
     <a href="/aditya-mittal-cv.pdf">CV</a>
     <a href="mailto:mittalaa@uci.edu">Email</a>
@@ -70,6 +70,15 @@ description: "Aditya Mittal is a master's student in Computer Science at UC Irvi
 </article>
 
 ## Talks & posters {#talks}
+
+<details class="detail-entry">
+    <summary><span>OpenVAU: Open-World Video Anomaly Understanding</span><span class="entry-date">August 2026</span></summary>
+    <div class="detail-body">
+        <p class="entry-meta">Poster · SCALE 2026, Johns Hopkins University</p>
+        <p>Presented a two-stage Qwen vision-language pipeline that detects and explains anomalies in raw video without predefined anomaly categories.</p>
+        <a href="/openvau-scale-2026-poster.pdf">Poster</a>
+    </div>
+</details>
 
 <details class="detail-entry">
     <summary><span>A Mathematical Approach to Algorithmic Fairness</span><span class="entry-date">December 2024</span></summary>

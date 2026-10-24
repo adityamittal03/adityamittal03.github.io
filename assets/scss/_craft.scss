@@ -269,14 +269,6 @@
     }
 
     .craft-hero-pair figcaption {
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        margin: 0;
-        padding: 0.45rem 0.6rem 0.75rem;
-        color: #fff;
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0));
         font-size: 0.78rem;
     }
 
@@ -512,7 +504,8 @@
     background: var(--paper-bg);
 }
 
-.craft-video-switcher__panel {
+.craft-video-switcher__panel,
+.craft-video-switcher__panel figure {
     margin: 0;
 }
 
@@ -534,6 +527,10 @@
 }
 
 @media (max-width: 520px) {
+    .craft-video-grid {
+        grid-template-columns: 1fr;
+    }
+
     .craft-video-switcher__tabs {
         display: grid;
         grid-template-columns: 1fr;

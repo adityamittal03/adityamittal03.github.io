@@ -85,7 +85,7 @@ scene.add(fillLight);
 
 const state = {
   ready: false,
-  autoPlay: true,
+  autoPlay: !window.matchMedia("(prefers-reduced-motion: reduce)").matches,
   time: 0,
   duration: 17,
   currentPhase: "assembled",
@@ -641,6 +641,7 @@ function updatePhaseTabs(explode, focus) {
   state.currentPhase = next;
   for (const button of phaseButtons) {
     button.classList.toggle("is-active", button.dataset.phase === next);
+    button.setAttribute("aria-pressed", String(button.dataset.phase === next));
   }
 }
 
@@ -681,6 +682,7 @@ function setManualPhase(phase) {
   updatePlayIcon();
   for (const button of phaseButtons) {
     button.classList.toggle("is-active", button.dataset.phase === phase);
+    button.setAttribute("aria-pressed", String(button.dataset.phase === phase));
   }
 }
 

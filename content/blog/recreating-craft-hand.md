@@ -195,19 +195,23 @@ teleoperation stack with one dexterous hand.
 <div class="craft-video-switcher" data-craft-video-switcher aria-label="Quest-based VR teleoperation task videos">
   <div class="craft-video-switcher__tabs" role="tablist" aria-label="Teleoperation task selection">
     <button class="craft-video-switcher__tab is-active" type="button" role="tab" id="craft-task-cup-tab" aria-controls="craft-task-cup-panel" aria-selected="true">Cup Pick-and-Place</button>
-    <button class="craft-video-switcher__tab" type="button" role="tab" id="craft-task-pour-tab" aria-controls="craft-task-pour-panel" aria-selected="false">Wine Pouring</button>
+    <button class="craft-video-switcher__tab" type="button" role="tab" id="craft-task-pour-tab" aria-controls="craft-task-pour-panel" aria-selected="false" tabindex="-1">Wine Pouring</button>
   </div>
-  <figure class="craft-video-switcher__panel is-active" id="craft-task-cup-panel" role="tabpanel" aria-labelledby="craft-task-cup-tab">
-    <video controls preload="metadata" playsinline muted data-playback-rate="1.5" src="/blog/craft-hand/videos/craft-cup-pick-place-teleop.mp4?v=20260709c"></video>
-    <span class="video-speed-badge">1.5x</span>
-    <figcaption>Pick-and-place with a white cup, where compliance helps the fingers
-    conform without over-squeezing the object.</figcaption>
-  </figure>
-  <figure class="craft-video-switcher__panel" id="craft-task-pour-panel" role="tabpanel" aria-labelledby="craft-task-pour-tab" hidden>
-    <video controls preload="metadata" playsinline muted src="/blog/craft-hand/videos/craft-wine-pouring-teleop.mp4?v=20260709c"></video>
-    <figcaption>More complex wine-pouring setup with GLIDE guardrails, where the hand,
-    robot, camera, and workspace must stay coordinated.</figcaption>
-  </figure>
+  <div class="craft-video-switcher__panel is-active" id="craft-task-cup-panel" role="tabpanel" aria-labelledby="craft-task-cup-tab">
+    <figure>
+      <video controls preload="metadata" playsinline muted data-playback-rate="1.5" src="/blog/craft-hand/videos/craft-cup-pick-place-teleop.mp4?v=20260709c"></video>
+      <span class="video-speed-badge">1.5x</span>
+      <figcaption>Pick-and-place with a white cup, where compliance helps the fingers
+      conform without over-squeezing the object.</figcaption>
+    </figure>
+  </div>
+  <div class="craft-video-switcher__panel" id="craft-task-pour-panel" role="tabpanel" aria-labelledby="craft-task-pour-tab" hidden>
+    <figure>
+      <video controls preload="metadata" playsinline muted src="/blog/craft-hand/videos/craft-wine-pouring-teleop.mp4?v=20260709c"></video>
+      <figcaption>More complex wine-pouring setup with GLIDE guardrails, where the hand,
+      robot, camera, and workspace must stay coordinated.</figcaption>
+    </figure>
+  </div>
 </div>
 
 ### Pi0.5 Policy Rollout

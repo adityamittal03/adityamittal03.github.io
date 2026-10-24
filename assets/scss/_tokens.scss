@@ -1,10 +1,14 @@
 // CSS Variables for theming
 :root {
+    color-scheme: light;
     --bg-primary: #fffdfa;
     --bg-secondary: #f8f8f8;
     --text-primary: #000;
     --text-secondary: #666;
     --border-color: #eee;
+    --code-bg: #eee;
+    --table-heading-bg: #f2f2f2;
+    --table-border: #ddd;
     --accent-color: #2F7D57;
     --accent-shadow: rgba(47, 125, 87, 0.28);
     --paper-bg: rgba(0, 0, 0, 0.03);
@@ -12,11 +16,15 @@
 }
 
 [data-theme="dark"] {
+    color-scheme: dark;
     --bg-primary: #000000;
     --bg-secondary: #111111;
     --text-primary: #F2F2F2;
     --text-secondary: #AAAAAA;
     --border-color: #292929;
+    --code-bg: #111;
+    --table-heading-bg: #111;
+    --table-border: #292929;
     --accent-color: #FF4D4D;
     --accent-shadow: rgba(255, 77, 77, 0.28);
     --paper-bg: rgba(255, 255, 255, 0.04);

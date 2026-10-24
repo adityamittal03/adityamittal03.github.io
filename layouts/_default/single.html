@@ -1,17 +1,14 @@
 {{ define "main" }}
-    <section{{ if eq .Section "blog" }} class="blog-post"{{ end }}>
-      <h1 class="post">{{ .Title }}</h1>
-      {{ .Content }}
-      {{ if in (slice "blog" "posts") .Section }}
+  <section{{ if eq .Section "blog" }} class="blog-post"{{ end }}>
+    <h1 class="post">{{ .Title }}</h1>
+    {{ .Content }}
+    {{ if eq .Section "blog" }}
       <div class="post-date">
-        <span class="g time">{{.Date.Format "January 2, 2006"}} </span> &#8729;
-        {{ $taxonomy := "tags" }} {{ with .Param $taxonomy }}
-        {{ range $index, $tag := . }} {{ with $.Site.GetPage (printf "/%s/%s"
-        $taxonomy $tag) -}}
-        <a href="{{ .RelPermalink }}">{{ $tag | urlize }}</a>
-        {{- end -}} {{- end -}}
+        <time class="time" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+        {{ range .GetTerms "tags" }}
+          <span aria-hidden="true"> · </span><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
         {{ end }}
       </div>
-      {{ end }}
-    </section>
+    {{ end }}
+  </section>
 {{ end }}

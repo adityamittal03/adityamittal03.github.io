@@ -6,7 +6,6 @@
   <meta name="description" content="{{ .Description | default .Site.Params.description }}">
   <link rel="canonical" href="{{ .Permalink }}">
   {{ template "_internal/opengraph.html" . }}
-  {{ template "_internal/schema.html" . }}
   <link rel="icon" type="image/x-icon" href="{{ "favicon.ico" | relURL }}">
   <link rel="manifest" href="{{ "site.webmanifest" | relURL }}">
   <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" href="{{ "index.xml" | absURL }}">

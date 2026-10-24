@@ -14,10 +14,6 @@ summary:focus-visible {
     padding: 0;
 }
 
-.site-nav ul a:first-child {
-    padding-left: 0;
-}
-
 .home-intro {
     display: grid;
     grid-template-columns: minmax(0, 1fr) 155px;
@@ -31,12 +27,6 @@ summary:focus-visible {
     font-size: 2.25rem;
     line-height: 1.2;
     letter-spacing: -0.025em;
-}
-
-.home-intro .avatar {
-    float: none;
-    margin: 0;
-    object-fit: cover;
 }
 
 .profile-links,

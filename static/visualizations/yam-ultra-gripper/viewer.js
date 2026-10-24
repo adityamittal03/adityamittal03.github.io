@@ -72,7 +72,7 @@ const clock = new THREE.Clock();
 
 const state = {
   ready: false,
-  autoPlay: true,
+  autoPlay: !window.matchMedia("(prefers-reduced-motion: reduce)").matches,
   userCamera: false,
   time: 0,
   duration: 9,
@@ -316,6 +316,7 @@ function updatePhaseTabs(explode) {
   state.phase = nextPhase;
   for (const button of phaseButtons) {
     button.classList.toggle("is-active", button.dataset.phase === nextPhase);
+    button.setAttribute("aria-pressed", String(button.dataset.phase === nextPhase));
   }
 }
 
@@ -334,6 +335,7 @@ function setManualPhase(phase) {
   updatePlayIcon();
   for (const button of phaseButtons) {
     button.classList.toggle("is-active", button.dataset.phase === phase);
+    button.setAttribute("aria-pressed", String(button.dataset.phase === phase));
   }
 }
 
