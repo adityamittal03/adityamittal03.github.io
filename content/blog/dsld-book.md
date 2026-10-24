@@ -1,5 +1,5 @@
 ---
-title: "Exploring Discrimination Through Data"
+title: "The DSLD Book"
 draft: false
 date: 2023-09-16
 description: "A companion book on exploring group differences, confounding, and fairness in machine learning with DSLD."
