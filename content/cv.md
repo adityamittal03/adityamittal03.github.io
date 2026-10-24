@@ -91,7 +91,7 @@ draft: false
 <details class="detail-entry">
     <summary><span>Graduate Research Intern · Johns Hopkins University</span><span class="entry-date">Jun – Aug 2026</span></summary>
     <div class="detail-body">
-        <p>Advisors: Reno Kriz and Dave Doermann.</p>
+        <p>Advisors: <a href="https://cse.buffalo.edu/~doermann/">Dave Doermann</a> and Reno Kriz.</p>
         <p>Developed OpenVAU, a two-stage Qwen vision-language pipeline to detect and explain anomalous events in raw video without predefined anomaly categories. A 32B model generates persona-guided questions from normal reference videos; an 8B model answers those questions on reference and unseen videos.</p>
     </div>
 </details>

@@ -5,7 +5,7 @@
     {{ if eq .Section "blog" }}
       <div class="blog-card-list" aria-label="Blog posts">
         {{ range .Pages.ByDate.Reverse }}
-          <a class="blog-card" href="{{ .RelPermalink }}" title="{{ .Title }}">
+          <a class="blog-card" href="{{ .Params.external_url | default .RelPermalink }}" title="{{ .Title }}">
             <span class="blog-card-thumb">
               {{ with .Params.images }}
                 <img src="{{ index . 0 | relURL }}" alt="">
