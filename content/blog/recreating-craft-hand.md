@@ -3,7 +3,6 @@ title: "Recreating CRAFT: Hardware Lessons for Dexterous Manipulation"
 date: 2026-06-23T14:50:27-04:00
 draft: false
 description: "A hands-on build log for recreating CRAFT, a tendon-driven robot hand with hybrid hard-soft compliance."
-image: "/blog/craft-hand/craft-completed-hand.png"
 images:
   - "/blog/craft-hand/craft-completed-hand.png"
 ---
@@ -57,7 +56,7 @@ demonstrates teleoperation with delicate objects such as eggs, raspberries, chip
 wine glasses.</p>
   </div>
   <figure>
-    <video controls autoplay loop muted playsinline preload="metadata" aria-label="Original CRAFT robot hand from the project paper" src="/blog/craft-hand/videos/craft-original-hand-demo.mp4"></video>
+    <video controls loop muted playsinline preload="metadata" aria-label="Original CRAFT robot hand from the project paper" src="/blog/craft-hand/videos/craft-original-hand-demo.mp4"></video>
     <figcaption>Original CRAFT hand, showing the compact tendon-driven layout and compliant fingers.</figcaption>
   </figure>
 </div>

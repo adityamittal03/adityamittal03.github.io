@@ -10,9 +10,7 @@
     --table-heading-bg: #f2f2f2;
     --table-border: #ddd;
     --accent-color: #2F7D57;
-    --accent-shadow: rgba(47, 125, 87, 0.28);
     --paper-bg: rgba(0, 0, 0, 0.03);
-    --paper-hover: rgba(0, 0, 0, 0.05);
 }
 
 [data-theme="dark"] {
@@ -26,7 +24,5 @@
     --table-heading-bg: #111;
     --table-border: #292929;
     --accent-color: #FF4D4D;
-    --accent-shadow: rgba(255, 77, 77, 0.28);
     --paper-bg: rgba(255, 255, 255, 0.04);
-    --paper-hover: rgba(255, 255, 255, 0.07);
 }

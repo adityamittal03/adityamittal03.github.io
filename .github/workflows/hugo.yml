@@ -41,7 +41,7 @@ jobs:
           for path in tracked + published:
               name = path.name.casefold()
               if (name in internal_names or internal_dirs.intersection(part.casefold() for part in path.parts)
-                      or name == ".env" or name.startswith(".env.") and name != ".env.example"
+                      or name == ".env" or (name.startswith(".env.") and name != ".env.example")
                       or path.suffix.casefold() in {".pem", ".key", ".log", ".tmp"}):
                   blocked.append(str(path))
           if blocked:

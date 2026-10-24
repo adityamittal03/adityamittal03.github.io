@@ -2,13 +2,7 @@ baseURL = 'https://adityamittal03.github.io/'
 enableRobotsTXT = true
 languageCode = 'en-us'
 title = 'Aditya Mittal'
-ignoreFiles = ['(^|/)\\.DS_Store$']
-
-[build]
-  publishDir = 'public'
-
-[permalinks]
-  pages = "/:slug"
+ignoreFiles = ['(^|/)\.DS_Store$']
 
 [params]
   logo = '/aditya-mittal-headshot.png'
@@ -29,18 +23,7 @@ ignoreFiles = ['(^|/)\\.DS_Store$']
 
 [markup]
   [markup.goldmark.renderer]
+    # Research entries and media layouts use inline HTML.
     unsafe = true
   [markup.highlight]
-    anchorLineNos = false
-    codeFences = true
-    guessSyntax = false
-    hl_Lines = ''
-    hl_inline = false
-    lineAnchors = ''
-    lineNoStart = 1
-    lineNos = false
-    lineNumbersInTable = true
-    noClasses = true
-    noHl = false
     style = 'monokailight'
-    tabWidth = 4

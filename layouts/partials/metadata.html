@@ -17,10 +17,11 @@
   "author" $author
 -}}
 {{- if eq $type "BlogPosting" -}}
+  {{- $images := .Params.images | default (slice .Site.Params.logo) -}}
   {{- $metadata = merge $metadata (dict
     "headline" .Title
     "mainEntityOfPage" (dict "@type" "WebPage" "@id" .Permalink)
-    "image" ((.Params.image | default .Site.Params.logo) | absURL)
+    "image" ((index $images 0) | absURL)
   ) -}}
   {{- if not .PublishDate.IsZero -}}
     {{- $metadata = merge $metadata (dict "datePublished" (.PublishDate.Format "2006-01-02T15:04:05Z07:00")) -}}

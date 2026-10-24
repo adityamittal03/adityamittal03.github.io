@@ -103,7 +103,6 @@ header {
     align-items: center;
     position: relative;
     padding-bottom: 1rem;
-
 }
 
 header a {
@@ -113,7 +112,6 @@ header a {
 header ul {
     list-style-type: none;
     padding: 0;
-
 }
 
 header li, header a {
@@ -259,10 +257,6 @@ th {
     position: relative;
 }
 
-.social-icon:hover {
-    color: var(--accent-color);
-}
-
 .social-icon svg {
     width: 20px;
     height: 20px;
@@ -274,7 +268,6 @@ footer {
     padding-top: 2rem;
     border-top: 1px solid var(--border-color);
     text-align: center;
-    font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
     p {
         margin: 0;
