@@ -41,7 +41,7 @@ description: "Aditya Mittal is a master's student in Computer Science at UC Irvi
 <article class="publication">
     <h3><a href="https://arxiv.org/abs/2411.08297">TowerDebias: A Novel Unfairness Removal Method Based on the Tower Property</a></h3>
     <p class="publication-authors"><strong>Aditya Mittal</strong> and Norman Matloff</p>
-    <p class="publication-venue">arXiv preprint, 2024</p>
+    <p class="publication-venue">Undergraduate thesis, 2024</p>
     <p class="publication-summary">A post-processing method that uses the tower property to improve the fairness of black-box predictions without retraining the model.</p>
     <div class="publication-links">
         <a href="https://arxiv.org/abs/2411.08297">Paper</a>
