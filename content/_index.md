@@ -56,7 +56,7 @@ description: "Aditya Mittal is a master's student in Computer Science at UC Irvi
 <article class="publication">
     <h3><a href="https://arxiv.org/abs/2411.04228">dsld: A Socially Relevant Tool for Teaching Statistics</a></h3>
     <p class="publication-authors"><strong>Aditya Mittal</strong>, Taha Abdullah, Arjun Ashok, Brandon Zarate Estrada, Shubhada Martha, Billy Ouattara, Jonathan Tran, and Norman Matloff</p>
-    <p class="publication-venue">arXiv preprint, 2024</p>
+    <p class="publication-venue">Technical report, 2024</p>
     <p class="publication-summary">R and Python tools for exploring discrimination and teaching statistical concepts through real-world fairness analysis.</p>
     <div class="publication-links">
         <a href="https://arxiv.org/abs/2411.04228">Paper</a>
