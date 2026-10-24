@@ -46,12 +46,12 @@ summary:focus-visible {
 }
 
 .publication {
-    padding: 1.4rem 0;
+    padding: 0.8rem 0;
     border-bottom: 1px solid var(--border-color);
 }
 
 .publication h3 {
-    margin: 0 0 0.4rem;
+    margin: 0 0 0.2rem;
     font-size: 1.2rem;
     line-height: 1.35;
 }
@@ -67,7 +67,7 @@ summary:focus-visible {
 }
 
 .publication p {
-    margin: 0.3rem 0;
+    margin: 0.15rem 0;
 }
 
 .publication-authors,
@@ -93,12 +93,47 @@ summary:focus-visible {
     font-size: 0.95rem;
 }
 
+.publication-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.1rem 0.65rem;
+    margin: 0.15rem 0;
+}
+
+.publication-meta .publication-venue {
+    margin: 0;
+}
+
+.publication-meta .publication-links {
+    position: relative;
+    gap: 0.15rem 0.8rem;
+    font-size: 0.95rem;
+    padding-left: 0.65rem;
+}
+
+.publication-meta .publication-links::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 1px;
+    height: 0.75em;
+    background: var(--text-secondary);
+    opacity: 0.5;
+    transform: translateY(-50%);
+}
+
+.publication-meta .publication-links a {
+    padding: 0;
+}
+
 .publication .publication-summary {
-    margin: 0.65rem 0;
+    margin: 0.3rem 0;
 }
 
 .publication-abstract {
-    margin-top: 0.55rem;
+    margin-top: 0.2rem;
 }
 
 .publication-abstract summary {
