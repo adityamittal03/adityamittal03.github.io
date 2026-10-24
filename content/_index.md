@@ -6,7 +6,7 @@ description: "Aditya Mittal is a master's student in Computer Science at UC Irvi
 <div class="home-intro">
 <div class="home-intro-copy">
 <h1>Aditya Mittal</h1>
-<p>I am a Master’s student in Computer Science at <strong>UC Irvine</strong>, working with <a href="https://unnat.github.io/">Unnat Jain</a> on <strong>robot learning and dexterous manipulation</strong>. <strong>I am applying to PhD programs in CS for Fall 2027.</strong></p>
+<p>I am a Master’s student in Computer Science at <strong>UC Irvine</strong>, working with <a href="https://unnat.github.io/">Unnat Jain</a> on robot learning and dexterous manipulation. <strong>I am applying to PhD programs in CS for Fall 2027.</strong></p>
 <p>In summer 2026, I worked with Reno Kriz and Dave Doermann at <strong>Johns Hopkins University</strong> on open-world video anomaly detection and understanding as part of <a href="https://hltcoe.jhu.edu/research/scale/scale-2026/">SCALE</a>. I hold a BS in Statistics with highest honors from <strong>UC Davis</strong>, where my research with <a href="https://faculty.engineering.ucdavis.edu/matloff/">Norman Matloff</a> on fairness in machine learning earned a <em>2025 CRA Honorable Mention</em>.</p>
 <nav class="profile-links" aria-label="Contact and profiles">
     <a href="/aditya-mittal-cv.pdf">CV</a>
