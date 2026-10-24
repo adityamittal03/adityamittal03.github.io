@@ -13,5 +13,3 @@ The CRAFT build notes draw on my own work and the
 [CRAFT](https://craft-hand.github.io/),
 [Open-TeleVision](https://robot-tv.github.io/), and
 [π₀.₅](https://arxiv.org/abs/2504.16054) projects; citations are in the post.
-
-Maintenance notes live in [AGENTS.md](AGENTS.md).

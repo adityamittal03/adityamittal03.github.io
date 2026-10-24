@@ -26,6 +26,28 @@ jobs:
           hugo-version: "0.148.2"
           extended: true
       - run: hugo --environment production --minify
+      - name: Check publication files
+        shell: bash
+        run: |
+          python3 - <<'PYCODE'
+          from pathlib import Path
+          import subprocess
+
+          internal_names = {"agents.md", "agents.override.md", "claude.md", "gemini.md", "notes.txt"}
+          internal_dirs = {"local", "archive", ".agents", ".codex", ".claude", ".cursor", ".git"}
+          tracked = [Path(p) for p in subprocess.check_output(["git", "ls-files", "-z"]).decode().split("\0") if p]
+          published = [p for p in Path("public").rglob("*") if p.is_file()]
+          blocked = []
+          for path in tracked + published:
+              name = path.name.casefold()
+              if (name in internal_names or internal_dirs.intersection(part.casefold() for part in path.parts)
+                      or name == ".env" or name.startswith(".env.") and name != ".env.example"
+                      or path.suffix.casefold() in {".pem", ".key", ".log", ".tmp"}):
+                  blocked.append(str(path))
+          if blocked:
+              raise SystemExit("Internal files must stay local:\n" + "\n".join(blocked))
+          print(f"Checked {len(tracked)} tracked files and {len(published)} published files.")
+          PYCODE
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
