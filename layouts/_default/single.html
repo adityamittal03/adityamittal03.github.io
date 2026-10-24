@@ -14,10 +14,4 @@
       </div>
       {{ end }}
     </section>
-    {{ if eq .Section "posts" }}
-    {{ if eq .Site.Params.comments.enabled true }}
-    <div id="comments">
-      {{ partial "comments.html" $ }}
-    </div>    {{ end }}
-    {{ end }}
 {{ end }}

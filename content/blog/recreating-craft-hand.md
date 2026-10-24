@@ -57,7 +57,7 @@ demonstrates teleoperation with delicate objects such as eggs, raspberries, chip
 wine glasses.</p>
   </div>
   <figure>
-    <video controls autoplay loop muted playsinline preload="metadata" aria-label="Original CRAFT robot hand from the project paper" src="/blog/craft-hand/craft-original-hand-demo.mp4"></video>
+    <video controls autoplay loop muted playsinline preload="metadata" aria-label="Original CRAFT robot hand from the project paper" src="/blog/craft-hand/videos/craft-original-hand-demo.mp4"></video>
     <figcaption>Original CRAFT hand, showing the compact tendon-driven layout and compliant fingers.</figcaption>
   </figure>
 </div>
@@ -277,8 +277,8 @@ manual adjustment needed between runs and making failures easier to diagnose.
   ([arXiv][craft-arxiv])
 - [Open-TeleVision: Teleoperation with Immersive Active Visual Feedback][open-television]
   ([code][open-television-code])
-- GLIDE: Guardrails for Learning from Infeasible Demonstrations Efficiently. Anonymous
-  Authors. Preprint.
+- [Learning Beyond What Humans Can Demonstrate][glide-paper]. Yuchen Song, Aditya Mittal,
+  and Unnat Jain. CoRL 2026. ([project][glide])
 - [pi0.5: a Vision-Language-Action Model with Open-World Generalization][pi05]
   ([arXiv][pi05])
 
@@ -286,6 +286,6 @@ manual adjustment needed between runs and making failures easier to diagnose.
 [craft-arxiv]: https://arxiv.org/abs/2603.12120
 [open-television]: https://robot-tv.github.io/
 [open-television-code]: https://github.com/OpenTeleVision/TeleVision
-<!-- GLIDE project URL is temporarily disabled for double-blind review and will be restored later. -->
+[glide-paper]: https://arxiv.org/abs/2609.24996
 [glide]: https://guardrail-policy.github.io/
 [pi05]: https://arxiv.org/abs/2504.16054

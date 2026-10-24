@@ -3,7 +3,7 @@ import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import { STLLoader } from "three/addons/loaders/STLLoader.js";
 
 const MODEL_ROOT = "/models/yam-ultra-craft-hand";
-const YAM_ROOT = `${MODEL_ROOT}/yam-ultra/assets`;
+const YAM_ROOT = "/models/yam-ultra-gripper/assets";
 const HAND_ROOT = `${MODEL_ROOT}/craft-hand`;
 const MOUNT_ROOT = `${MODEL_ROOT}/mount`;
 
@@ -477,7 +477,7 @@ async function buildReplacementTool() {
   const mountMaterialA = makeMaterial(0x2f3839, { roughness: 0.46, metalness: 0.05 });
   const mountMaterialB = makeMaterial(0x4f5a5c, { roughness: 0.48, metalness: 0.05 });
 
-  mountPart1 = await loadStl(`${MOUNT_ROOT}/mount_part1.stl`, mountMaterialA, {
+  mountPart1 = await loadStl(`${MOUNT_ROOT}/mount-part-1.stl`, mountMaterialA, {
     center: true,
     scale: 0.001,
   });
@@ -487,7 +487,7 @@ async function buildReplacementTool() {
   trackPart(mountPart1, [-0.075, -0.02, 0.035]);
   materialGroups.replacement.push(mountPart1);
 
-  mountPart2 = await loadStl(`${MOUNT_ROOT}/mount_part_2.stl`, mountMaterialB, {
+  mountPart2 = await loadStl(`${MOUNT_ROOT}/mount-part-2.stl`, mountMaterialB, {
     center: true,
     scale: 0.001,
   });

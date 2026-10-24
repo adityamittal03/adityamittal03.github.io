@@ -1,5 +1,6 @@
 ---
 title: "CV"
+url: "/experience/"
 description: "Education, research, and industry experience of Aditya Mittal."
 draft: false
 ---

@@ -1,20 +1,46 @@
-# OS/editor metadata
-.DS_Store
-**/.DS_Store
-.vscode/
-.idea/
-.env
-.env.*
-!.env.example
+# Local notes, unused media, simulation sources, and previous archives
+/local/
+/archive/
+/aditya-text.md
 
-# Hugo build/cache artifacts
+# Generated site and Hugo caches
 /public/
 /resources/
 /.hugo_build.lock
+/hugo_stats.json
+/.build/
+/.cache/
+/dist/
 
-# Generated Hugo files if the site is accidentally built to the repo root
+# OS and editor files
+.DS_Store
+.AppleDouble
+._*
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Credentials and machine-specific settings
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Dependency caches and temporary output
+node_modules/
+__pycache__/
+*.pyc
+*.log
+*.tmp
+
+# Accidental build output at the repository root (assets/ and layouts/ are source)
 /index.html
 /index.xml
+/index.json
 /sitemap.xml
 /404.html
 /categories/
@@ -22,12 +48,13 @@
 /experience/
 /projects/
 /js/
+/scss/
 /robots.txt
 /*.ico
 /*.webmanifest
 /*.pdf
 
-# Root-level scratch/exported media. Keep real site assets under static/.
+# Scratch exports: publish intentional assets from static/, not the repository root
 /*.png
 /*.jpg
 /*.jpeg
@@ -47,10 +74,10 @@
 /*.heic
 /*.heif
 
-# Local writing draft used before syncing into content/
-/aditya-text.md
-
-# Local CAD source/export files not referenced by the static viewers
-/static/models/**/*.3mf
-/static/models/**/*.f3d
-/static/models/**/*.f3z
+# Keep CAD authoring files local; browser viewers use STL meshes only
+*.3mf
+*.f3d
+*.f3z
+*.blend
+*.step
+*.stp

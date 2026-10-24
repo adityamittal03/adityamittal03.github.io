@@ -1,1 +1,0 @@
-# CRAFT-hand-URDF

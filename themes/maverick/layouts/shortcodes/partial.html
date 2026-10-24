@@ -1,5 +1,0 @@
-{{- $name := .Get "name" -}}
-{{- $context := .Get "context" | default . -}}
-{{- if $name -}}
-{{- partial $name $context -}}
-{{- end -}}
